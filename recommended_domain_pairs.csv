@@ -1,0 +1,5 @@
+pair_id,type,source,target,expected_transferability,similarity_score
+1,SIMILAR,Cleaning & Household,"Foodgrains, Oil & Masala",HIGH,0.6993460897848764
+2,MODERATE,Gourmet & World Food,Beverages,MODERATE,0.5493748159636042
+3,PRICE_SEGMENT,Premium Segment,Budget Segment,LOW,0.19
+4,BRAND_POPULARITY,Popular Brands,Niche Brands,MODERATE-LOW,0.4
