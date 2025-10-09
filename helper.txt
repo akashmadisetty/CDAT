@@ -1,0 +1,48 @@
+
+ADA:
+Day 3-4: BigBasket EDA
+
+ Load and explore BigBasket data
+ Analyze product categories and distributions:
+
+python  # Category analysis
+  - Grocery: X products, avg price, rating distribution
+  - Personal Care: Y products, avg price, rating distribution
+  - Beauty & Hygiene: Z products
+  - Baby Care, Household, Beverages
+
+ Identify missing values, outliers
+ Define 4 Domain Pairs:
+
+Grocery (source) → Personal Care (target)
+Beauty & Hygiene (source) → Baby Care (target)
+Premium segment (>75th percentile) → Budget segment (<25th)
+Popular brands (>50 products) → Niche brands (<10 products)
+
+
+
+Day 5-7: UK Retail EDA & Preprocessing
+
+ Load UK Online Retail data
+ Clean data (remove cancellations, negatives)
+ Calculate RFM features:
+
+python  # For each customer:
+  - Recency: Days since last purchase
+  - Frequency: Number of transactions
+  - Monetary: Total spend
+
+ Define 3 Domain Pairs:
+
+UK (source) → France (target)
+UK (source) → Germany (target)
+High-value customers (top 25%) → Medium-value (25-50%)
+
+
+ Visualize customer distributions per country
+
+Deliverables:
+
+Clean datasets saved in data/processed/
+EDA report with domain characteristics
+7 well-defined domain pairs for experiments
