@@ -30,29 +30,29 @@ DOMAIN_PAIRS = [
     {
         'id': 1,
         'name': 'Cleaning & Household → Foodgrains, Oil & Masala',
-        'source_file': 'domain_pair1_source_FINAL.csv',
-        'target_file': 'domain_pair1_target_FINAL.csv',
+        'source_file': '../week1/domain_pair1_source_FINAL.csv',
+        'target_file': '../week1/domain_pair1_target_FINAL.csv',
         'expected_transfer': 'HIGH'
     },
     {
         'id': 2,
         'name': 'Snacks & Branded Foods → Fruits & Vegetables',
-        'source_file': 'domain_pair2_source_FINAL.csv',
-        'target_file': 'domain_pair2_target_FINAL.csv',
+        'source_file': '../week1/domain_pair2_source_FINAL.csv',
+        'target_file': '../week1/domain_pair2_target_FINAL.csv',
         'expected_transfer': 'MODERATE'
     },
     {
         'id': 3,
         'name': 'Premium → Budget',
-        'source_file': 'domain_pair3_source_FINAL.csv',
-        'target_file': 'domain_pair3_target_FINAL.csv',
+        'source_file': '../week1/domain_pair3_source_FINAL.csv',
+        'target_file': '../week1/domain_pair3_target_FINAL.csv',
         'expected_transfer': 'LOW'
     },
     {
         'id': 4,
         'name': 'Popular Brands → Niche Brands',
-        'source_file': 'domain_pair4_source_FINAL.csv',
-        'target_file': 'domain_pair4_target_FINAL.csv',
+        'source_file': '../week1/domain_pair4_source_FINAL.csv',
+        'target_file': '../week1/domain_pair4_target_FINAL.csv',
         'expected_transfer': 'LOW-MODERATE'
     }
 ]
