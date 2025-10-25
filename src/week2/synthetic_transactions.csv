@@ -1,0 +1,445 @@
+transaction_id,customer_id,product_id,category,brand,date,quantity,unit_price,total_price
+T0000001,C00000,Cut - Fruit Salad,Fruits & Vegetables,Fresho,11-05-2024,2,48,96
+T0000002,C00000,Flexibility Capsules,Beauty & Hygiene,ORGANIC INDIA,17-01-2024,1,225,225
+T0000003,C00000,Canada - Urban Glow Skin Brightening Day Cream SPF 20,Beauty & Hygiene,Faces,03-02-2024,1,749.25,749.25
+T0000004,C00000,100% Melamine Tumbler Set - Yellow,"Kitchen, Garden & Pets",Iveo ,05-05-2024,1,149,149
+T0000005,C00000,Banana Bread - 100% Wholewheat,"Bakery, Cakes & Dairy",The Baker's Dozen,24-04-2024,1,139,139
+T0000006,C00002,Sugarfree Strawberry,Snacks & Branded Foods,Smint,20-03-2024,1,34,34
+T0000007,C00002,Perfume - Beyond Paradise Edp (For Women),Beauty & Hygiene,Estee Lauder,29-05-2024,1,2399.47,2399.47
+T0000008,C00002,Wafers - Hazelnut Cream,Gourmet & World Food,Nutro,05-06-2024,1,50,50
+T0000009,C00002,Ayurvedic Prickly Heat Powder - Cologne Cool,Beauty & Hygiene,Shower To Shower,04-01-2024,1,88,88
+T0000010,C00002,Ayurvedic Prickly Heat Powder - Sandal,Beauty & Hygiene,Shower To Shower,10-06-2024,1,60,60
+T0000011,C00003,Lavender Heart Bath Gift Set For Skin & Hair,Beauty & Hygiene,Soulflower,14-06-2024,1,1400,1400
+T0000012,C00003,Exo Round Dish wash bar - Round ( with free scrubber),Cleaning & Household,Exo,24-05-2024,1,39,39
+T0000013,C00003,Himalayan Pink Salt - Crushed,Gourmet & World Food,Nutty Yogi,27-01-2024,1,39,39
+T0000014,C00004,English Lavender Deodorant Roll On Antiperspirant - For Women,Beauty & Hygiene,Yardley London,02-04-2024,1,122.5,122.5
+T0000015,C00004,Flavored Center Chocolate - Raspberry & Goji,Snacks & Branded Foods,Brookside,04-03-2024,3,153.62,460.86
+T0000016,C00004,Flavored Center Chocolate - Raspberry & Goji,Snacks & Branded Foods,Brookside,15-03-2024,2,153.62,307.24
+T0000017,C00004,Processed Cheese,"Bakery, Cakes & Dairy",Amul,30-03-2024,1,204,204
+T0000018,C00004,Papad - Moong,Snacks & Branded Foods,Bhikharam chandmal,17-02-2024,1,190,190
+T0000019,C00004,Soft Dried Turkish Figs,Gourmet & World Food,DOLE,09-05-2024,1,145,145
+T0000020,C00004,Cara Mia Women Eau De Parfum,Beauty & Hygiene,Aigner,12-03-2024,1,1920,1920
+T0000021,C00005,"Glass Bottle With Plastic Outer - Purple Lid, BB1309","Kitchen, Garden & Pets",DP,03-05-2024,2,189,378
+T0000022,C00005,"Pet Toy Shoe - Assorted Colour, BB1517","Kitchen, Garden & Pets",DP,17-01-2024,1,79,79
+T0000023,C00005,Napthalene Balls,Cleaning & Household,Kasturi,05-02-2024,3,90,270
+T0000024,C00005,Fresh Active Roll On,Beauty & Hygiene,Nivea Men,05-02-2024,1,194.13,194.13
+T0000025,C00005,Dermexa Emollient Cream,Beauty & Hygiene,Aveeno,16-03-2024,1,1050,1050
+T0000026,C00005,Premium Square Plastic Container - Blue,"Kitchen, Garden & Pets",Mastercook,14-01-2024,1,169,169
+T0000027,C00005,"Cereal Lucky Charms - Gluten-Free, Imported",Gourmet & World Food,General Mills,03-05-2024,2,899,1798
+T0000028,C00005,Quinoa - Gluten-Free,Gourmet & World Food,NUTRIWISH,22-05-2024,1,200,200
+T0000029,C00006,Beard Growth Oil Powered with Vetiver & 4 Essential Oils,Beauty & Hygiene,Bombay Shaving Company,19-01-2024,1,217,217
+T0000030,C00006,Combo - Precision Safety Razor & 10 Feather Blades,Beauty & Hygiene,Bombay Shaving Company,14-05-2024,1,999,999
+T0000031,C00006,Reload Electrolytes Effervescent Tablets - Berry Flavour,Beauty & Hygiene,FAST&UP,06-03-2024,3,215,645
+T0000032,C00007,Commander Plastic Laundry Basket - Assorted Colour,Cleaning & Household,Aristo,14-03-2024,1,850,850
+T0000033,C00007,My Story For Him - Perfumed Deodorant Natural Spray,Beauty & Hygiene,Embark,12-06-2024,1,295,295
+T0000034,C00007,My Life For Him - Perfumed Deodorant Natural Spray,Beauty & Hygiene,Embark,27-05-2024,2,295,590
+T0000035,C00008,Plastic Clip Mop,Cleaning & Household,Magix,19-02-2024,1,360,360
+T0000036,C00008,Bottle Brush With Sponge,Cleaning & Household,Magix,27-03-2024,1,72,72
+T0000037,C00009,Yellow Cocktail,Gourmet & World Food,Quencha,02-05-2024,1,325,325
+T0000038,C00009,Yellow Cocktail,Gourmet & World Food,Quencha,30-03-2024,3,325,975
+T0000039,C00009,Stemless Byadgi Chilli Powder/Menasina Pudi - Dandi Cut,"Foodgrains, Oil & Masala",SSK,15-01-2024,1,70,70
+T0000040,C00009,Yellow Cocktail,Gourmet & World Food,Quencha,26-03-2024,1,325,325
+T0000041,C00009,Yellow Cocktail,Gourmet & World Food,Quencha,25-02-2024,2,325,650
+T0000042,C00010,Wafers - Hazelnut Cream,Gourmet & World Food,Nutro,10-04-2024,1,85,85
+T0000043,C00010,Namkeen - Khara Groundnuts,Snacks & Branded Foods,Sanjay ,01-04-2024,3,72,216
+T0000044,C00010,Diamond Hair Remover - For Dry Skin,Beauty & Hygiene,Astaberry,31-01-2024,1,71.25,71.25
+T0000045,C00010,Funky Avatar Perfume Spray,Beauty & Hygiene,Set Wet,05-03-2024,1,132,132
+T0000046,C00010,Glass Tumbler - Octron Chroma,"Kitchen, Garden & Pets",Treo,23-05-2024,1,409,409
+T0000047,C00010,Gluten-Free Ragi Atta,Gourmet & World Food,Graminway,22-01-2024,2,179,358
+T0000048,C00011,Awadhi Lazzat Ul Taam/Potli Ka Masala,Gourmet & World Food,Cafe Junyali,26-06-2024,1,545,545
+T0000049,C00011,Lemon Pickle,Snacks & Branded Foods,Rusingo,22-03-2024,1,130,130
+T0000050,C00012,Soya Sticks - Magic Masala,Snacks & Branded Foods,Jabsons,12-03-2024,1,60,60
+T0000051,C00012,Classic Coffee,Beverages,Nescafe ,04-03-2024,1,100,100
+T0000052,C00012,No.1 Bathing Soap - Lime & Aloe Vera,Beauty & Hygiene,Godrej No.1,22-03-2024,1,254.15,254.15
+T0000053,C00012,Gentleman Classic Daily Wear Perfume EDC For Men,Beauty & Hygiene,Yardley London,06-04-2024,2,486.75,973.5
+T0000054,C00012,Triphala Churna Powder,Gourmet & World Food,Nectar Valley,20-06-2024,1,275,275
+T0000055,C00012,Stainless Steel Induction Base Sauce Pan - Regular,"Kitchen, Garden & Pets",Vinod,01-01-2024,1,299,299
+T0000056,C00012,"Yumitos Potato Chips - Original Style, Chilli",Snacks & Branded Foods,Bingo,15-06-2024,3,96,288
+T0000057,C00013,"Apricot Extra Jam - No Sugar Added, Imported",Gourmet & World Food,Stute ,24-01-2024,1,375,375
+T0000058,C00013,Nutri Rich - Seaweed Fortified Vermicompost,"Kitchen, Garden & Pets",IFFCO Urban Gardens,18-03-2024,3,150,450
+T0000059,C00013,"Raspberry Seedless Extra Jam - No Sugar Added, Imported",Gourmet & World Food,Stute ,26-01-2024,2,375,750
+T0000060,C00013,"Raspberry Seedless Extra Jam - No Sugar Added, Imported",Gourmet & World Food,Stute ,09-03-2024,1,375,375
+T0000061,C00013,Nutri Rich - Seaweed Fortified Vermicompost,"Kitchen, Garden & Pets",IFFCO Urban Gardens,14-06-2024,1,150,150
+T0000062,C00013,"Raspberry Seedless Extra Jam - No Sugar Added, Imported",Gourmet & World Food,Stute ,23-01-2024,1,375,375
+T0000063,C00014,Cold Brew Blend,Gourmet & World Food,Maverick & Farmer Coffee,09-06-2024,2,380,760
+T0000064,C00014,Vanilla Pound Mug Cake Mix,Gourmet & World Food,Serapheena,24-06-2024,1,67.15,67.15
+T0000065,C00014,Almond Flour Cake Mix - Victorian Vanilla,Gourmet & World Food,Serapheena,04-02-2024,1,381.65,381.65
+T0000066,C00014,Cocoa Heaven Mug Cake Mix,Gourmet & World Food,Serapheena,10-03-2024,1,67.15,67.15
+T0000067,C00014,Organic - Jowar Flour/Jolada Hittu,"Foodgrains, Oil & Masala",bb Royal,18-01-2024,1,62,62
+T0000068,C00015,Grand'Or Milk & Hazelnuts,Gourmet & World Food,Heidi,24-04-2024,1,350,350
+T0000069,C00015,Lia Candanam Divine & Soothing Exclusive Fragrance,Cleaning & Household,Cycle,24-06-2024,1,70,70
+T0000070,C00015,Mix - Dal Rice,"Foodgrains, Oil & Masala",Just A Minute,08-05-2024,1,55,55
+T0000071,C00015,Rasogolla,Snacks & Branded Foods,MTR,19-06-2024,1,115,115
+T0000072,C00015,Everfresh Morning Rose Dew Gel Blocks,Cleaning & Household,Air wick,13-03-2024,2,59,118
+T0000073,C00015,Hand Sanitizer - 70% Alcohol Base,Beauty & Hygiene,Bionova,11-05-2024,2,250,500
+T0000074,C00015,Penne Pasta - Gluten Free,Gourmet & World Food,Schar,01-03-2024,1,325,325
+T0000075,C00016,"Deltoid Lite Face Masks In Grey Knit Fabric With Binding - 1S1022, Small",Beauty & Hygiene,3BO,10-06-2024,2,245,490
+T0000076,C00016,Pasta - Spaghetti,Gourmet & World Food,Colavita,24-04-2024,1,210,210
+T0000077,C00016,Leo Water/Juice Glass Tumbler,"Kitchen, Garden & Pets",BB Home,16-04-2024,1,409,409
+T0000078,C00017,Steel Cut Oats,Gourmet & World Food,NUTRIWISH,03-01-2024,1,125,125
+T0000079,C00017,Flax Seed Powder,Gourmet & World Food,NUTRIWISH,12-05-2024,1,450,450
+T0000080,C00017,Organic - Ponni Boiled Rice,"Foodgrains, Oil & Masala",bb Royal,17-04-2024,1,569,569
+T0000081,C00017,Cocoa Powder,Snacks & Branded Foods,NUTRIWISH,08-06-2024,1,650,650
+T0000082,C00018,Daily Calamine Talc - Renew,Beauty & Hygiene,Candid,18-01-2024,1,175,175
+T0000083,C00019,Extra Light Olive Oil,Gourmet & World Food,Bertolli,19-04-2024,2,998.97,1997.94
+T0000084,C00019,Opalware Classique Dessert Bowl Set - Royal Irish,"Kitchen, Garden & Pets",Laopala Diva,25-01-2024,1,439,439
+T0000085,C00020,Black Grape & Walnut Dark Chocolate,Gourmet & World Food,Toska Chocolates,27-03-2024,1,290,290
+T0000086,C00020,Cardio Egg - Low Cholesterol Good For Heart,"Eggs, Meat & Fish",Best,27-03-2024,3,84,252
+T0000087,C00020,Magic Seal Plastic Tumbler Royal - Red,"Kitchen, Garden & Pets",Polyset,28-04-2024,2,69,138
+T0000088,C00020,Nylon Rope,Cleaning & Household,SSS,22-05-2024,1,80,80
+T0000089,C00021,"Snacks - Cheese Balls, Cheese Flavoured",Gourmet & World Food,Oriental,25-05-2024,1,80,80
+T0000090,C00021,"Steel Storage/Lunch Container - No.30, Blue, Klip It","Kitchen, Garden & Pets",Joyo Steel,12-04-2024,2,169,338
+T0000091,C00022,Kashmiri Chilly Powder,"Foodgrains, Oil & Masala",Nirapara,12-01-2024,1,58.65,58.65
+T0000092,C00023,Tuna Sandwich Flakes In Oil With Red Chili,"Eggs, Meat & Fish",Golden Prize,18-06-2024,1,156.75,156.75
+T0000093,C00023,Tea Bags - Earl Grey,Gourmet & World Food,Mlesna,11-01-2024,3,350,1050
+T0000094,C00024,Bhringaraj Herb Powder - Supports As Natural Hair Tonic,Beauty & Hygiene,Bixa Botanical,01-06-2024,1,195,195
+T0000095,C00025,Cough Drops - Ginger,Beauty & Hygiene,Vicks,14-04-2024,3,20,60
+T0000096,C00026,Crisp & Shine Floral Fusion Fabric Enhancer,Cleaning & Household,Ujala Supreme,13-02-2024,1,45,45
+T0000097,C00026,Masala - Vatha Kulambu,"Foodgrains, Oil & Masala",Aachi,24-05-2024,1,25.2,25.2
+T0000098,C00026,Crisp & Shine Floral Fusion Fabric Enhancer,Cleaning & Household,Ujala Supreme,26-04-2024,1,45,45
+T0000099,C00026,Chocolate Milk - Choc,Gourmet & World Food,Tango,29-01-2024,3,30,90
+T0000100,C00027,Nachoz - Sizzling Peri Peri,Snacks & Branded Foods,ACT II,06-02-2024,1,63,63
+T0000101,C00027,Clear Glycerine Soap - Oil Balance (Eucalyptus Oil & Mint),Beauty & Hygiene,Medimix,08-03-2024,1,40,40
+T0000102,C00028,"Ultra-Fresh Fairness Face Wash With Milk, Licorice, Saffron",Beauty & Hygiene,Olivia,14-02-2024,2,15,30
+T0000103,C00028,Cento EDP Oriental Perfume For Men,Beauty & Hygiene,Ajmal,09-06-2024,1,1716,1716
+T0000104,C00028,Men Fresh Active Deodorant,Beauty & Hygiene,Nivea Men,24-03-2024,2,398,796
+T0000105,C00028,Bounce Biscuits - Choco Creme,Snacks & Branded Foods,Sunfeast,25-03-2024,1,54,54
+T0000106,C00029,Neem Face Mask With Neem & Tea Tree For Pimples & Zits,Beauty & Hygiene,Mamaearth,17-05-2024,1,499,499
+T0000107,C00029,"Chai/Cup & Saucer - Red & White, Lotus Print","Kitchen, Garden & Pets",India Circus,09-05-2024,1,979,979
+T0000108,C00029,Nutrition Energy Bar - Dates & Walnut,Snacks & Branded Foods,GoodDiet,07-05-2024,2,334.45,668.9
+T0000109,C00030,Fairness Facial Serum - Vitamin C Rich,Beauty & Hygiene,Vaadi,06-06-2024,1,261,261
+T0000110,C00030,Khaas Shampoo Bar - Aloe Hibiscus,Beauty & Hygiene,Stonesoup,07-06-2024,1,295,295
+T0000111,C00030,Adult Diapers Large,Beauty & Hygiene,Kare Med,28-05-2024,1,305,305
+T0000112,C00030,Dry Copra/Coconut,Fruits & Vegetables,Fresho,12-06-2024,3,60,180
+T0000113,C00030,45% Roasted Hazelnuts Dark Chocolate,Gourmet & World Food,Daarzel,19-04-2024,1,143.65,143.65
+T0000114,C00031,Chocolate - Lindor Milk Truffles with Coconut Filling,Gourmet & World Food,Lindt,09-05-2024,1,950,950
+T0000115,C00031,Ultra Soft Air Fresh Sanitary Pads - XL,Beauty & Hygiene,Whisper ,21-05-2024,1,333,333
+T0000116,C00031,Wonder Pants Diapers - Small Size,Baby Care,Huggies,01-05-2024,1,407.63,407.63
+T0000117,C00031,Pepper & Herb Chicken Sausages,Snacks & Branded Foods,Yummiez,14-02-2024,1,140,140
+T0000118,C00031,Instant Coffee,Gourmet & World Food,Hintz,27-05-2024,1,200,200
+T0000119,C00031,Woman - Pure Eau De Toilette Deodorant,Beauty & Hygiene,Nike,19-05-2024,1,195.3,195.3
+T0000120,C00031,Ready To Eat - Dal Fry,Snacks & Branded Foods,MTR,25-02-2024,3,110,330
+T0000121,C00031,Custard Powder - Strawberry,Snacks & Branded Foods,Weikfield,17-05-2024,1,36,36
+T0000122,C00032,Face Wash - Activated Bamboo Charcoal,Beauty & Hygiene,Aroma Magic ,21-05-2024,2,147,294
+T0000123,C00032,Regenerist Advanced Anti-Ageing Revitalizing Skin Serum,Beauty & Hygiene,Olay,21-03-2024,1,1189.15,1189.15
+T0000124,C00032,Organic Fenugreek/Methi/Menthya,"Foodgrains, Oil & Masala",Earthon,10-03-2024,1,85,85
+T0000125,C00032,Regenerist - Advanced Anti-Ageing Revitalising Hydration Skin Cream Moisturizer SPF 15,Beauty & Hygiene,Olay,29-03-2024,1,1049.25,1049.25
+T0000126,C00033,"Snacks - Super Rings, Cheese Flavoured",Gourmet & World Food,Oriental,11-05-2024,1,80,80
+T0000127,C00034,Organic White Quinoa,Gourmet & World Food,Nourish You,03-05-2024,1,289,289
+T0000128,C00034,Mayonnaise - Mint,Snacks & Branded Foods,Veeba,01-02-2024,1,149,149
+T0000129,C00034,"Liquid Concealer - Absolute White, Intense",Beauty & Hygiene,Lakme,16-01-2024,1,446.5,446.5
+T0000130,C00035,Chicken Zing - Cool,"Eggs, Meat & Fish",Blue Flame,08-01-2024,2,254.15,508.3
+T0000131,C00035,Memorica Tablet - Relieves Stress & Enhances Memory,Beauty & Hygiene,Jiva Ayurveda,08-06-2024,1,85,85
+T0000132,C00035,Barrel Whisky/Juice Glass,"Kitchen, Garden & Pets",Pasabahce,24-02-2024,1,599,599
+T0000133,C00035,"Novawhite Glutathione & Vitamin C Cream - For Men & Women, Suitable For all Skin Types",Beauty & Hygiene,Bionova,21-02-2024,1,675,675
+T0000134,C00035,Natural Ice Cream - Yummy Chocochip,"Bakery, Cakes & Dairy",NIC,30-04-2024,1,350,350
+T0000135,C00035,Classic Assam Tea,Gourmet & World Food,Te-A-Me,01-04-2024,1,139,139
+T0000136,C00036,Paneer Masala,"Foodgrains, Oil & Masala",bb Royal,02-03-2024,1,18,18
+T0000137,C00036,"Blue Printed Pencil Pouchv - PU, BB1288BLU",Cleaning & Household,DP,14-01-2024,2,111,222
+T0000138,C00036,Masala Supergrain Mix - 3 Ayurvedic Herbs & 4 Supergrains,Snacks & Branded Foods,Kapiva Ayurveda,07-05-2024,1,225.25,225.25
+T0000139,C00036,Plastic Mixing Bowl With Lid - Assorted,"Kitchen, Garden & Pets",All Time,28-06-2024,1,309,309
+T0000140,C00036,Sponge Brush - Bottle Cleaning,Cleaning & Household,Liao,11-04-2024,1,119,119
+T0000141,C00036,Organic Barnyard Millet/Kuthiraivalli Rava,"Foodgrains, Oil & Masala",bb Royal,12-02-2024,1,83,83
+T0000142,C00037,Soya Milk - Chocolate,"Bakery, Cakes & Dairy",Sofit ,15-06-2024,2,261.46,522.92
+T0000143,C00037,"Wet Dog Food - Chicken & Liver Chunks In Gravy, For Puppy","Kitchen, Garden & Pets",Pedigree,24-04-2024,1,175,175
+T0000144,C00037,Earl Grey Tea,Beverages,Twinings,09-03-2024,3,910,2730
+T0000145,C00037,Damage Repair Protein Conditioner,Beauty & Hygiene,Himalaya,20-06-2024,1,140.25,140.25
+T0000146,C00038,Corn Rings - Masala Mania,Snacks & Branded Foods,Crax,17-03-2024,1,15,15
+T0000147,C00038,Fragrance Body Spray- Good Morning,Beauty & Hygiene,Park avenue,19-06-2024,2,179.1,358.2
+T0000148,C00038,Mango Drink,Beverages,Real,26-05-2024,1,59.5,59.5
+T0000149,C00038,"Body Lotion, Whitening Cool Sensation, SPF 15 & Refreshing Menthol",Beauty & Hygiene,Nivea,01-06-2024,3,370,1110
+T0000150,C00038,Lip Balm - Raspberry,Beauty & Hygiene,Lotus Herbals,12-02-2024,3,190,570
+T0000151,C00039,Ayurvedic Prickly Heat Powder - Sandal,Beauty & Hygiene,Shower To Shower,06-06-2024,3,60,180
+T0000152,C00039,Ayurvedic Prickly Heat Powder - Cologne Cool,Beauty & Hygiene,Shower To Shower,26-06-2024,1,88,88
+T0000153,C00039,Electro +Â  ORS Apple Drink,Beverages,Amrutanjan,29-04-2024,1,35,35
+T0000154,C00039,Taft Power Hair Lacquer Mega Strong 5,Beauty & Hygiene,Schwarzkopf,02-03-2024,3,395,1185
+T0000155,C00040,Stainless Steel Water Bottle- Black BB 508,"Kitchen, Garden & Pets",DP,31-05-2024,1,440,440
+T0000156,C00040,Opalware Ivory Dinner Set - Golden Fall,"Kitchen, Garden & Pets",Laopala Diva,24-02-2024,2,2399.47,4798.94
+T0000157,C00040,Brownie Mix - Triple Choco Brownie,Snacks & Branded Foods,Betty Crocker,07-05-2024,1,297,297
+T0000158,C00040,Small Utility Hooks,"Kitchen, Garden & Pets",Command,18-02-2024,1,99,99
+T0000159,C00041,Pet Selo Container Set - Silver,"Kitchen, Garden & Pets",Steelo,15-06-2024,2,269,538
+T0000160,C00041,Solitaire Storage Transparent Pet Container Set - Green Lid,"Kitchen, Garden & Pets",Steelo,11-01-2024,1,409,409
+T0000161,C00041,Sante Infuser Water Bottle - Red,"Kitchen, Garden & Pets",Steelo,26-02-2024,3,109,327
+T0000162,C00041,Stix,"Kitchen, Garden & Pets",Jerhigh,11-05-2024,1,240,240
+T0000163,C00041,Pet Food - Chicken Grilled in Gravy,"Kitchen, Garden & Pets",Jerhigh,20-04-2024,2,300,600
+T0000164,C00041,Pet Selo Container Set - Silver,"Kitchen, Garden & Pets",Steelo,06-03-2024,2,229,458
+T0000165,C00041,"Steelo Skippar Plastic Storage Container - Purple Lid, 750 ml, 500 ml, 250 ml","Kitchen, Garden & Pets",Steelo,27-06-2024,1,559,559
+T0000166,C00042,Comfy Breast Pump,Baby Care,Vauva,05-05-2024,1,899,899
+T0000167,C00042,Ready Mix - Rava Idli,Snacks & Branded Foods,Gits,01-02-2024,1,105,105
+T0000168,C00042,Essential Tea Tree Oil & Neem Face Wash,Beauty & Hygiene,ST. D'VENCE,19-01-2024,2,299,598
+T0000169,C00042,Pickle - Rajasthani Sweet Lime,Snacks & Branded Foods,Mother's Recipe,28-03-2024,3,89,267
+T0000170,C00042,Gluten-Free Kuttu Atta/Buckwheat Flour,Gourmet & World Food,Graminway,30-05-2024,2,249,498
+T0000171,C00042,24 Hour Skincare Starter Kit,Beauty & Hygiene,The Moms Co,20-06-2024,1,1116,1116
+T0000172,C00042,Zoom Ultimate Dark Triangle Pencils,Cleaning & Household,Doms,04-06-2024,1,147,147
+T0000173,C00042,Original Cinnamon,Gourmet & World Food,REGENCY,31-05-2024,1,115,115
+T0000174,C00043,Opti Care Smooth Straight Professional Ultra Smoothing Conditioner,Beauty & Hygiene,Matrix,23-01-2024,1,470,470
+T0000175,C00043,"Clothes-Storage-Laundry Bag, Fabric - Navy Blue & Off White, Leaf PrintN BlueÂ  BB 550",Cleaning & Household,DP,06-03-2024,1,299,299
+T0000176,C00043,Skippar Plastic Storage Container - Green Lid,"Kitchen, Garden & Pets",Steelo,18-03-2024,1,549,549
+T0000177,C00043,Multi-Purpose Plastic Trolley With Wheels/Plastic Stand - Grey,"Kitchen, Garden & Pets",Laplast,15-03-2024,2,919,1838
+T0000178,C00044,Tamarind/Hunisehannu - Indian,"Foodgrains, Oil & Masala",Double Horse,28-03-2024,1,75,75
+T0000179,C00044,Coconut Training Treat,"Kitchen, Garden & Pets",Dogsee Crunch,27-06-2024,2,199,398
+T0000180,C00044,Powder - Pickle,"Foodgrains, Oil & Masala",Double Horse,09-04-2024,1,49,49
+T0000181,C00045,"Stainless Steel Knife - Prima Streak, , Assorted","Kitchen, Garden & Pets",Kvg,13-05-2024,1,40,40
+T0000182,C00045,Almonds - Smokehouse,Gourmet & World Food,Blue Diamond,18-05-2024,1,350,350
+T0000183,C00045,"Bodywash - Aroma Therapy Absolute Relax, Imported Shower Gel",Beauty & Hygiene,Palmolive,01-05-2024,2,298.52,597.04
+T0000184,C00045,Benares Authentic Indian Masala Chai,Beverages,Karma Kettle,27-04-2024,2,350,700
+T0000185,C00046,Leaf Tea,Beverages,Wagh Bakri,01-03-2024,1,135,135
+T0000186,C00046,"Dates Roll - Sugarfree, Oil Free",Gourmet & World Food,BHealthy,08-06-2024,1,99,99
+T0000187,C00048,Whey Protein - Malt Beverage health drink with DHA - Chocolate,Beverages,Amul Pro,21-05-2024,1,140,140
+T0000188,C00048,Dough Maker,"Kitchen, Garden & Pets",IRICH,20-04-2024,2,495,990
+T0000189,C00048,"Coffee Filter Papers - Size 02, White","Kitchen, Garden & Pets",TGL Co.,14-01-2024,1,360,360
+T0000190,C00048,Easy Palappam Podi,"Foodgrains, Oil & Masala",Nirapara,19-05-2024,3,59,177
+T0000191,C00048,Maxx Pet Container - Yellow,"Kitchen, Garden & Pets",Saaj,15-06-2024,1,149,149
+T0000192,C00049,Pineapple Cake,"Bakery, Cakes & Dairy",Britannia,11-05-2024,1,15,15
+T0000193,C00049,Almonds Chocolate Bar - Pure Belgian,Gourmet & World Food,Lindberg,14-04-2024,1,339.15,339.15
+T0000194,C00049,Organic Carom Seeds/Ajwain/Om Kalu,"Foodgrains, Oil & Masala",Earthon,08-06-2024,2,72,144
+T0000195,C00049,Chicken Cocktail Sausage,"Eggs, Meat & Fish",Fresho,10-01-2024,1,171.6,171.6
+T0000196,C00050,Shaving Blades - Wilkinson Sword Saloon Pack,Beauty & Hygiene,Gillette,26-06-2024,1,24.5,24.5
+T0000197,C00050,Organic Dried Red Stick Chilli - Whole,"Foodgrains, Oil & Masala",24 Mantra,23-03-2024,1,70,70
+T0000198,C00050,Vector,Beauty & Hygiene,Gillette,04-04-2024,3,63.7,191.1
+T0000199,C00050,Guard - Cartridges,Beauty & Hygiene,Gillette,30-03-2024,3,26.46,79.38
+T0000200,C00050,Series Pre Shave Gel With Aloe - Sensitive Skin,Beauty & Hygiene,Gillette,29-06-2024,2,279.65,559.3
+T0000201,C00050,Venus Snap Hair Remover For Smooth Skin - Women,Beauty & Hygiene,Gillette,23-02-2024,1,799,799
+T0000202,C00051,Pitted Green Olives,Gourmet & World Food,HappyChef,14-05-2024,2,179,358
+T0000203,C00051,Chia Seed No Shine Hydrating Cream,Beauty & Hygiene,The Face Shop,16-04-2024,1,2199,2199
+T0000204,C00051,"Face Mask GP95+ - White, Medium",Beauty & Hygiene,Godrej Protekt,06-01-2024,2,130,260
+T0000205,C00051,Soft Woollens Expert Care Wash Liquid Detergent,Cleaning & Household,Love & Care,07-06-2024,1,108,108
+T0000206,C00051,Fruit Drink - Orange,Beverages,Minute Maid ,21-03-2024,1,109,109
+T0000207,C00051,Luxor Plastic Fruit & Vegetable Plastic Basket With Lid - Assorted Color,Cleaning & Household,Aristo,24-05-2024,2,160,320
+T0000208,C00052,Long Point Sharpener,Cleaning & Household,Apsara,17-06-2024,1,98,98
+T0000209,C00052,Marquis - Paris Deo Blue for Men,Beauty & Hygiene,Remy ,05-01-2024,3,265.05,795.15
+T0000210,C00052,Art Kit,Cleaning & Household,Apsara,05-04-2024,1,147,147
+T0000211,C00052,Marquis - Paris Deo Blue for Men,Beauty & Hygiene,Remy ,25-05-2024,1,265.05,265.05
+T0000212,C00052,Gold HB Pencils,Cleaning & Household,Apsara,07-04-2024,1,40,40
+T0000213,C00053,Air Effects Room Freshener - Anti Tobacco,Cleaning & Household,Ambipur,13-01-2024,1,299,299
+T0000214,C00053,Organic Classic Lemon Ice Tea,Gourmet & World Food,Brewhouse Tea Brewing Co.,12-06-2024,2,36,72
+T0000215,C00053,"Coffee Roasters - Medium-Dark Attikan Estate, Channi",Gourmet & World Food,Blue Tokai ,13-02-2024,1,450,450
+T0000216,C00053,Fabric Softener - Classic Blue,Cleaning & Household,Comfort,09-03-2024,2,450,900
+T0000217,C00054,Knife Plain - Star,"Kitchen, Garden & Pets",Ritu,01-04-2024,2,69,138
+T0000218,C00054,"Plastic Gas Stove Legs - Anti Slip, Assorted Colour","Kitchen, Garden & Pets",Ritu,12-04-2024,1,109,109
+T0000219,C00054,Fragrance Body Spray- Good Morning,Beauty & Hygiene,Park avenue,17-03-2024,1,179.1,179.1
+T0000220,C00055,Chewy Mints - Lemon,Snacks & Branded Foods,Doublemint,30-05-2024,1,50,50
+T0000221,C00055,Chewy Mints - Lemon,Snacks & Branded Foods,Doublemint,04-01-2024,1,50,50
+T0000222,C00055,Chicken Burger Patty - Ready To Cook,Snacks & Branded Foods,Yummiez,15-06-2024,1,175,175
+T0000223,C00056,Home Zone Stainless Steel Milk Pan - Induction Bottom,"Kitchen, Garden & Pets",Kitchen Essentials,02-01-2024,1,149,149
+T0000224,C00056,Home Zone Stainless Steel Milk Pan - Induction Bottom,"Kitchen, Garden & Pets",Kitchen Essentials,14-06-2024,1,149,149
+T0000225,C00056,"Stainless Steel Dutch Oven - Cook & Serve, With Glass Lid, Induction Bottom","Kitchen, Garden & Pets",Kitchen Essentials,29-06-2024,1,599,599
+T0000226,C00056,Home Zone Stainless Steel Milk Pan - Induction Bottom,"Kitchen, Garden & Pets",Kitchen Essentials,07-01-2024,1,149,149
+T0000227,C00056,Combo - Steel Copper Bottom Milk Sauce Pan 14 cm + Handi-Kadhai 16 cm With Glass Lid,"Kitchen, Garden & Pets",Kitchen Essentials,30-03-2024,2,399,798
+T0000228,C00057,Anti-Lice Treatment Shampoo,Beauty & Hygiene,Mediker,22-02-2024,2,50,100
+T0000229,C00057,Non-Sticky Hair Oil - Walnut & Almond,Beauty & Hygiene,Hair & Care,02-02-2024,1,140,140
+T0000230,C00057,"Tablet - Organic, Ashwagandha, 750 mg, USDA Certified",Gourmet & World Food,Geo-Fresh,17-04-2024,2,480,960
+T0000231,C00057,Cloth Clips,"Kitchen, Garden & Pets",camry,29-04-2024,3,150,450
+T0000232,C00057,Milk Bikis Milk Cream Biscuits,Snacks & Branded Foods,Britannia,21-06-2024,1,36,36
+T0000233,C00058,Organic - Cumin/Jeera/Jeerige,"Foodgrains, Oil & Masala",bb Royal,01-04-2024,1,65,65
+T0000234,C00058,Organic - Jaggery/Bella,"Foodgrains, Oil & Masala",bb Royal,21-06-2024,1,77,77
+T0000235,C00059,Pancake Mix - Buckwheat And Oats,Gourmet & World Food,Beantree,29-01-2024,1,235,235
+T0000236,C00059,Maxriter Ballpen Set - Black,Cleaning & Household,BIC Cello,21-02-2024,1,98,98
+T0000237,C00060,Roasted Peanuts - Lemon & Chilli,Snacks & Branded Foods,Jabsons,31-03-2024,1,70,70
+T0000238,C00060,Olive OilÂ - Pure,Gourmet & World Food,Disano,25-06-2024,2,2399.47,4798.94
+T0000239,C00060,Turbo Patla Plastic Stool - Assorted Colour,Cleaning & Household,Polyset,14-06-2024,2,389,778
+T0000240,C00060,Greek Goddess - Sour Cream & Onion,Gourmet & World Food,Wingreens Farms,14-01-2024,1,200,200
+T0000241,C00060,"White Sandwich Bread - Safe, Preservative Free","Bakery, Cakes & Dairy",Fresho,19-01-2024,3,39,117
+T0000242,C00060,Snake Gourd,Fruits & Vegetables,Fresho,02-02-2024,1,15,15
+T0000243,C00060,Hair Fall Control Oil,Beauty & Hygiene,Dr Batra's ,15-04-2024,1,145,145
+T0000244,C00060,Instant Breakfast Cereal,Snacks & Branded Foods,Namhya,25-03-2024,1,420,420
+T0000245,C00061,Safe Sun Daily Multi-Function Sun Block PA+++ - SPF 70,Beauty & Hygiene,Lotus Herbals,20-06-2024,1,483.75,483.75
+T0000246,C00061,Wet Cat Food Chicken In Gravy For Cats +1Year + Kittens 2-12 Months(12x85g each),"Kitchen, Garden & Pets",Whiskas,03-02-2024,1,795.6,795.6
+T0000247,C00061,Peppy Mint Handmade Loofah Soap,Beauty & Hygiene,Nyassa,05-01-2024,3,300,900
+T0000248,C00061,Spicy Lemony Chickpeas,Gourmet & World Food,FabBox,13-02-2024,1,180,180
+T0000249,C00061,Pre Shave Cream - Regular,Beauty & Hygiene,Gillette,01-03-2024,1,34.3,34.3
+T0000250,C00061,Apple Cider Vinegar Shampoo,Beauty & Hygiene,Wow Skin Science,15-03-2024,2,402.5,805
+T0000251,C00061,"Floor Cleaner - pH Neutral (Cleans all Surfaces, Sensitive to skin, pH-neutral)",Cleaning & Household,Frosch,24-03-2024,2,299,598
+T0000252,C00061,"Storage Container/Canister/Deep Dabba Convex, Matte Finish","Kitchen, Garden & Pets",Aagam,26-03-2024,1,119,119
+T0000253,C00062,Organic - Forest Honey,Snacks & Branded Foods,Organica,15-04-2024,1,299,299
+T0000254,C00062,Plastic Bathroom Mug - Blue,Cleaning & Household,All Time,26-02-2024,1,29,29
+T0000255,C00062,Passion Fruit Syrup,Gourmet & World Food,Pekers,18-02-2024,1,850,850
+T0000256,C00062,"Steel Storage/Lunch Container - No.14, Pink, Klip It","Kitchen, Garden & Pets",Joyo Steel,18-04-2024,3,219,657
+T0000257,C00062,"Juzt Jelly - Assorted Flavour, Birthday Pack",Snacks & Branded Foods,ALPENLIEBE,07-02-2024,1,75,75
+T0000258,C00063,Pumpkin Seeds - Roasted & Salted,Beauty & Hygiene,NUTRIWISH,09-01-2024,1,420,420
+T0000259,C00063,Tea - Masala,Beverages,Wagh Bakri,09-02-2024,3,500,1500
+T0000260,C00063,"Face Mask - Pro Tech 95, 6 layered, Large, MK 18000",Beauty & Hygiene,T BASE,27-02-2024,1,249,249
+T0000261,C00063,Laundry Sanitizer,Cleaning & Household,Lifebuoy,19-01-2024,1,90,90
+T0000262,C00063,Aloe Vera Carrier Gel,Beauty & Hygiene,INATUR ,07-06-2024,1,357.5,357.5
+T0000263,C00063,Body Deodorant - Red,Beauty & Hygiene,Wild Stone,07-02-2024,2,149.25,298.5
+T0000264,C00063,Bio Almond Nourishing Soap 75G+Bio Berry Body Wash 200ml+Bio Apple Shampoo 200ml,Beauty & Hygiene,BIOTIQUE,16-01-2024,1,396.25,396.25
+T0000265,C00064,Baking Soda,Gourmet & World Food,Purix,01-04-2024,1,90.25,90.25
+T0000266,C00064,"Ivory Glass Set - New, B13009","Kitchen, Garden & Pets",Ocean,05-01-2024,1,569,569
+T0000267,C00064,Perfume Body Spray - Enchanted Spring For Women,Beauty & Hygiene,Armaf,21-06-2024,1,475,475
+T0000268,C00065,Dreams Cup Cake - Chocolate,"Bakery, Cakes & Dairy",Elite,18-02-2024,1,50,50
+T0000269,C00066,"Tea Bag - Green, Honey, Lemon",Beverages,WaghBakri,19-04-2024,2,62.5,125
+T0000270,C00066,"Sitishield D95 Mask – Black, Large",Beauty & Hygiene,Dettol,12-06-2024,1,254.15,254.15
+T0000271,C00066,"100% Melamine Full Plate 10.5"" - Yellow","Kitchen, Garden & Pets",Iveo ,01-05-2024,1,149,149
+T0000272,C00066,"Cold Pressed Rosehip Carrier Oil For Moisturisation, Lighten pigmentation",Beauty & Hygiene,Soulflower,18-01-2024,1,680,680
+T0000273,C00066,Green Coffee Beans,Gourmet & World Food,NUTRIWISH,12-02-2024,2,720,1440
+T0000274,C00066,Gel Toothpaste for Kids - Strawberry Flavor,Beauty & Hygiene,Dentoshine  ,09-01-2024,1,79,79
+T0000275,C00066,Dark Belgian 70 % Dark (less than 5% maida),"Bakery, Cakes & Dairy",Brownie Cottage,17-01-2024,3,230,690
+T0000276,C00067,Vegan Sports Energy Gel - Chocolate Flavour,Beauty & Hygiene,FAST&UP,08-02-2024,1,495,495
+T0000277,C00067,"BCAA With Arginine, Glutamine & Muscle Activation Boosters - Lime & Lemon Flavour",Beauty & Hygiene,FAST&UP,26-02-2024,1,2399.47,2399.47
+T0000278,C00067,Vegan Sports Energy Gel - Chocolate Flavour,Beauty & Hygiene,FAST&UP,03-03-2024,2,495,990
+T0000279,C00067,Vegan Sports Energy Gel - Chocolate Flavour,Beauty & Hygiene,FAST&UP,21-06-2024,2,495,990
+T0000280,C00067,Vegan Sports Energy Gel - Chocolate Flavour,Beauty & Hygiene,FAST&UP,29-05-2024,1,495,495
+T0000281,C00067,Vegan Sports Energy Gel - Strawberry Banana Flavour,Beauty & Hygiene,FAST&UP,04-05-2024,2,495,990
+T0000282,C00067,Reload Electrolytes Effervescent Tablets - Berry Flavour,Beauty & Hygiene,FAST&UP,15-01-2024,1,215,215
+T0000283,C00068,Dark Chocolate Bar,Gourmet & World Food,Rage,10-01-2024,1,299,299
+T0000284,C00068,Rajwadi Kesari Milk Masala,"Foodgrains, Oil & Masala",Jawai,20-01-2024,1,495,495
+T0000285,C00068,Crispy Bread Crumbs,Gourmet & World Food,American Pancake Co.,28-01-2024,1,112.5,112.5
+T0000286,C00068,"Glass Bottle Ombre Matt Finish - Blue, BB1321","Kitchen, Garden & Pets",DP,27-06-2024,2,249,498
+T0000287,C00069,Original Hand Wash Liquid Pump,Beauty & Hygiene,Dettol,13-04-2024,1,79,79
+T0000288,C00069,Hand Wash Refill - Original,Beauty & Hygiene,Dettol,15-04-2024,1,218,218
+T0000289,C00069,Original Germ Protection Bathing Soap,Beauty & Hygiene,Dettol,07-03-2024,1,96,96
+T0000290,C00069,Jasmine Bathing Soap - Co-Created With Moms,Beauty & Hygiene,Dettol,13-06-2024,2,260,520
+T0000291,C00070,Ginger Milk Chocolate,Gourmet & World Food,Toska Chocolates,24-03-2024,1,290,290
+T0000292,C00070,Millet Idly & Dosa Batter,Snacks & Branded Foods,Batter Box,01-06-2024,2,100,200
+T0000293,C00070,Madagascar - Single Origin Dark Chocolate,Gourmet & World Food,Toska Chocolates,24-03-2024,3,320,960
+T0000294,C00070,Cranberry White Chocolate,Gourmet & World Food,Toska Chocolates,29-02-2024,1,290,290
+T0000295,C00070,Millet Idly & Dosa Batter,Snacks & Branded Foods,Batter Box,13-06-2024,1,100,100
+T0000296,C00070,Cranberry White Chocolate,Gourmet & World Food,Toska Chocolates,22-02-2024,2,290,580
+T0000297,C00071,Toilet Cleaner - Super Strong,Cleaning & Household,Good Home,12-03-2024,1,25,25
+T0000298,C00071,Sitopaladi Churna,Beauty & Hygiene,Dabur,31-03-2024,1,172,172
+T0000299,C00071,Apsara 1 Water Bottle - Assorted Colour,"Kitchen, Garden & Pets",Steelo Sunpet,05-05-2024,2,159,318
+T0000300,C00071,Kitchen King,"Foodgrains, Oil & Masala",Orika,02-01-2024,1,51,51
+T0000301,C00071,Aloe Vera and Moringa Juice,Beverages,Kapiva Ayurveda,04-04-2024,1,600,600
+T0000302,C00071,Pomegranate 100% Fruit Juice - No Added Sugar,Beverages,Storia,18-06-2024,3,32.55,97.65
+T0000303,C00072,"Skin Superfood - Advanced Plant Based Formula, Blueberry & Lemon Flavour",Gourmet & World Food,Chicnutrix,13-05-2024,1,1584,1584
+T0000304,C00072,Breakfast Cereal - Strawberry Flavour Burst,Snacks & Branded Foods,Nestle Koko Krunch,22-06-2024,2,190,380
+T0000305,C00072,Fruit Salt - Lemon,Beauty & Hygiene,Eno ,28-04-2024,3,115,345
+T0000306,C00072,Gouda,Gourmet & World Food,Kodai Cheese,07-03-2024,2,250,500
+T0000307,C00072,Satyendra Sattoo,"Foodgrains, Oil & Masala",Satyendra,17-01-2024,1,120,120
+T0000308,C00072,Plastic Milano Mix Container - Gary,"Kitchen, Garden & Pets",Flair,30-01-2024,1,189,189
+T0000309,C00072,Pro Expert Nutrition Large Breed Puppy (3-18 Months) Dry Dog Food,"Kitchen, Garden & Pets",Pedigree,29-02-2024,2,2399.47,4798.94
+T0000310,C00072,Duck Flavour,Gourmet & World Food,Yum Yum,02-06-2024,1,35,35
+T0000311,C00073,Lezzet Culinary Essence Assorted Flavours,Gourmet & World Food,Lezzet,19-01-2024,1,285,285
+T0000312,C00073,Lezzet Culinary Essence Assorted Flavours,Gourmet & World Food,Lezzet,14-01-2024,1,285,285
+T0000313,C00073,Lezzet Culinary Essence Assorted Flavours,Gourmet & World Food,Lezzet,27-02-2024,1,285,285
+T0000314,C00073,Lezzet Culinary Essence Assorted Flavours,Gourmet & World Food,Lezzet,01-02-2024,1,285,285
+T0000315,C00074,Stainless Steel Tea Spoon - Sunday Sapphire,"Kitchen, Garden & Pets",Anjali,11-04-2024,2,149,298
+T0000316,C00074,Plastic Thread Maxi Mop,Cleaning & Household,Magix,09-04-2024,1,285,285
+T0000317,C00074,Universal Knife - Fantastiqe,"Kitchen, Garden & Pets",Anjali,14-03-2024,1,85,85
+T0000318,C00074,Pantry/Cookie/Snacks Glass Jar With Blue Lid,"Kitchen, Garden & Pets",Yera,09-01-2024,1,189,189
+T0000319,C00074,Cool Bath Soap - 99.9% Germ Protection,Beauty & Hygiene,Cinthol,18-06-2024,2,99,198
+T0000320,C00074,"Tea - Infusion, Tulsi Sweet Rose",Beverages,ORGANIC INDIA,01-01-2024,1,168,168
+T0000321,C00075,100% Anti Hangover Drink - Lemon,Gourmet & World Food,ARMR,15-01-2024,3,100,300
+T0000322,C00075,Ayush Men Moisturiser,Beauty & Hygiene,Vlcc,30-05-2024,1,275,275
+T0000323,C00075,Organic Hibiscus Mojito Instant Drink Premix - Sugar-Free,Gourmet & World Food,D-Alive,02-05-2024,2,399,798
+T0000324,C00075,Soild Gel Air Freshener - After The Rain Inspiration,Cleaning & Household,RENUZIT,28-01-2024,1,199,199
+T0000325,C00075,"Organic Almond Cashew Praline - Sugar-Free, Gluten-Free,",Snacks & Branded Foods,D-Alive,15-05-2024,2,599,1198
+T0000326,C00075,100% Anti Hangover Drink - Blackberry,Gourmet & World Food,ARMR,07-05-2024,1,100,100
+T0000327,C00076,"2 Fold Umbrella - Auto-Open & Manual Close, Dark Violet","Kitchen, Garden & Pets",Fendo,27-02-2024,1,289,289
+T0000328,C00076,"3 Fold Umbrella - Auto-Open & Manual Close, Black","Kitchen, Garden & Pets",Fendo,22-06-2024,1,479,479
+T0000329,C00076,"3 Fold Umbrella - Auto-Open & Manual Close, Black","Kitchen, Garden & Pets",Fendo,21-05-2024,1,479,479
+T0000330,C00076,"Woman-In-Charge - Hypnotique, Eau De Parfum",Beauty & Hygiene,OGA,30-05-2024,1,700,700
+T0000331,C00076,"3 Fold Umbrella - Auto-Open & Manual Close, Navy Blue","Kitchen, Garden & Pets",Fendo,28-02-2024,1,499,499
+T0000332,C00076,"Man-In-Charge - Black Gold, Eau De Parfum",Beauty & Hygiene,OGA,01-05-2024,1,700,700
+T0000333,C00077,Poppy Seed Natural Handmade Herbal Soap,Beauty & Hygiene,Fuschia,29-04-2024,1,250,250
+T0000334,C00077,Bentonite Clay Natural Handmade Herbal Soap,Beauty & Hygiene,Fuschia,11-02-2024,1,225,225
+T0000335,C00077,"Cheese - Swiss Gruyere, Block",Gourmet & World Food,Fresho Signature,03-06-2024,1,822.6,822.6
+T0000336,C00078,Family Snack,Gourmet & World Food,GoodDiet,27-06-2024,2,135,270
+T0000337,C00078,Toothbrush - Gum Expert (Soft),Beauty & Hygiene,Pepsodent,03-01-2024,3,55,165
+T0000338,C00078,Shampoo - Coconut Water,Beauty & Hygiene,XPEL,01-05-2024,1,450,450
+T0000339,C00078,Mango Kombucha - Zero Sugar,Gourmet & World Food,Toyo Kombucha,13-01-2024,1,150,150
+T0000340,C00079,Blueberries - Dried,Gourmet & World Food,REGENCY,08-02-2024,1,219,219
+T0000341,C00079,Peri Peri Garlic Dip,Gourmet & World Food,Wingreens Farms,02-05-2024,1,280,280
+T0000342,C00079,Pickle - Mango,Snacks & Branded Foods,Mother's Recipe,16-04-2024,1,119,119
+T0000343,C00079,Fruit & Seeds Bar,Snacks & Branded Foods,RiteBite Max Protein,19-06-2024,2,40,80
+T0000344,C00079,Peanut Brittle - With Jaggery,Gourmet & World Food,Lindberg,26-03-2024,1,119,119
+T0000345,C00079,100% Melamine Tumbler Set - Yellow,"Kitchen, Garden & Pets",Iveo ,27-02-2024,1,149,149
+T0000346,C00079,Beard Wash - The Classic,Beauty & Hygiene,Beardo,10-01-2024,1,308,308
+T0000347,C00080,Punch DP - 280,Cleaning & Household,Kangaroo,06-06-2024,3,103,309
+T0000348,C00080,Punch DP - 52,Cleaning & Household,Kangaroo,21-06-2024,1,81,81
+T0000349,C00080,Stapler 10,Cleaning & Household,Kangaroo,10-06-2024,1,53,53
+T0000350,C00080,Piping Pastry Bag Medium,Gourmet & World Food,Fine Decor,07-03-2024,3,195,585
+T0000351,C00080,Piping Pastry Bag Medium,Gourmet & World Food,Fine Decor,09-01-2024,1,195,195
+T0000352,C00080,Piping Pastry Bag Large,Gourmet & World Food,Fine Decor,06-06-2024,1,205,205
+T0000353,C00081,Cold Brew Blend,Gourmet & World Food,Maverick & Farmer Coffee,28-04-2024,2,380,760
+T0000354,C00082,Masala Biscuit,"Bakery, Cakes & Dairy",Chai Point,07-06-2024,1,20,20
+T0000355,C00082,Nilgiri Orthodox Black Tea,Gourmet & World Food,Chai Point,11-02-2024,1,145,145
+T0000356,C00082,Black Tea Bags,Gourmet & World Food,Chai Point,20-06-2024,1,119,119
+T0000357,C00082,Masala Instant Chai,Gourmet & World Food,Chai Point,23-03-2024,2,199,398
+T0000358,C00082,Trail Mix,Gourmet & World Food,Chai Point,22-06-2024,2,70,140
+T0000359,C00083,Chocos Crunchy Bites,Snacks & Branded Foods,Kelloggs,31-03-2024,1,15,15
+T0000360,C00083,3-In-1-Shower Gel,Beauty & Hygiene,Red Hunt,14-06-2024,1,159.2,159.2
+T0000361,C00083,Cold Processed Skin Lavender Handmade Soap,Beauty & Hygiene,Soulflower,14-01-2024,2,255,510
+T0000362,C00083,Stainless Steel Induction Base Tope,"Kitchen, Garden & Pets",Vinod,16-06-2024,1,349,349
+T0000363,C00083,Glass Cleaner,Cleaning & Household,Floroma,18-02-2024,1,30.5,30.5
+T0000364,C00084,Premium Aromatic Govind Bhog Rice,"Foodgrains, Oil & Masala",BONGO BHOG,18-03-2024,1,612.5,612.5
+T0000365,C00084,Plastic Pouch Sealing Clips - Small,Cleaning & Household,Unik Home,25-05-2024,1,65,65
+T0000366,C00084,Premium Aromatic Govind Bhog Rice,"Foodgrains, Oil & Masala",BONGO BHOG,22-01-2024,1,612.5,612.5
+T0000367,C00084,Plastic Pouch Sealing Clips - Small,Cleaning & Household,Unik Home,04-05-2024,1,65,65
+T0000368,C00085,"Sanitary Pads - Advanced All Nights Soft Ultra-Thin Xl, with Wings",Beauty & Hygiene,STAYFREE,10-04-2024,1,90,90
+T0000369,C00085,"Biscotti - Dark Chocolate & Rock Salt, Gluten Free",Gourmet & World Food,GoodDiet,05-03-2024,2,159,318
+T0000370,C00085,Absorbent Cotton Wool,Beauty & Hygiene,Prabhat,24-05-2024,1,35,35
+T0000371,C00085,"Colour Splash, Red",Gourmet & World Food,Colourmist,19-02-2024,3,242.25,726.75
+T0000372,C00086,Strawberry Natural Moisturising Body Lotion,Beauty & Hygiene,BodyHerbals,05-02-2024,1,450,450
+T0000373,C00087,Activated Charcoal Deep Pore Detox Face Wash - Sulphate Free,Beauty & Hygiene,Aloe Veda,03-04-2024,1,189,189
+T0000374,C00087,"On Pocket Perfume - Man, Cool Marine",Beauty & Hygiene,Engage,14-01-2024,1,58.8,58.8
+T0000375,C00087,New Orchid Jr. Casserole For Roti/Chapati Gift Set - Dark-Brown,"Kitchen, Garden & Pets",Milton,14-03-2024,1,769,769
+T0000376,C00087,Healthy Multigrain Mix,Gourmet & World Food,GoodDiet,03-02-2024,2,65,130
+T0000377,C00087,Baking Powder,Gourmet & World Food,Nectar Valley,01-02-2024,1,225,225
+T0000378,C00087,Black Henna With Hibiscus Hair Colour,Beauty & Hygiene,Banjara's,10-02-2024,2,65,130
+T0000379,C00087,Power Activ+ - Mosquito Repellent Refill,Cleaning & Household,Good knight,02-04-2024,3,365,1095
+T0000380,C00088,Aloevera Skin Moistrurising Gel,Beauty & Hygiene,Banjara's,15-04-2024,1,171,171
+T0000381,C00088,Baby Corn - In Brine,Snacks & Branded Foods,Morton,12-06-2024,2,75,150
+T0000382,C00088,Cashew W240,Gourmet & World Food,SAPPHERO,31-03-2024,1,445,445
+T0000383,C00088,Hygiene Plus Non Clumping 100% Natural Cat Litter,"Kitchen, Garden & Pets",Catsan,09-02-2024,1,790.5,790.5
+T0000384,C00088,Conditioner - Organic Now,Beauty & Hygiene,DELON,21-05-2024,1,699,699
+T0000385,C00088,Almonds,Gourmet & World Food,SAPPHERO,08-06-2024,1,405,405
+T0000386,C00089,Red Chilli Sauce,Snacks & Branded Foods,Ching'S Secret,08-03-2024,1,84,84
+T0000387,C00089,Sandwich Masala Spice Mix,Gourmet & World Food,Entree,02-03-2024,1,85.5,85.5
+T0000388,C00089,FunFoods Veg Mayonnaise Olive Oil,Snacks & Branded Foods,Dr. Oetker,18-04-2024,1,69,69
+T0000389,C00089,Castor Oil,Beauty & Hygiene,ST. D'VENCE,07-05-2024,1,299,299
+T0000390,C00089,Umami Taste  Enhancer,"Foodgrains, Oil & Masala",Ajinomoto,21-05-2024,1,42,42
+T0000391,C00089,Urad Dal/Uddina Bele Whole White,"Foodgrains, Oil & Masala",Tata Sampann,10-04-2024,1,178,178
+T0000392,C00089,Imli Khajoor Chutney,"Foodgrains, Oil & Masala",Madhur,26-04-2024,1,90,90
+T0000393,C00089,Powder - Hing,"Foodgrains, Oil & Masala",MTR,18-06-2024,3,72,216
+T0000394,C00090,SDA GARLIC SANDIGE  PAPAD,Snacks & Branded Foods,SDA PAPPADS,04-01-2024,1,42,42
+T0000395,C00090,Beer Shampoo - Anti Dandruff,Beauty & Hygiene,Park avenue,17-04-2024,1,124,124
+T0000396,C00091,Face Mask 6 Layer Reusable With Activated Carbon,Beauty & Hygiene,Care 4 All,01-06-2024,1,165,165
+T0000397,C00091,Stainless Steel Buffet Plate - Beggi China No. 8,"Kitchen, Garden & Pets",Neelam,19-01-2024,3,55,165
+T0000398,C00091,Lemon & Tea Tree Oil Body Wash,Beauty & Hygiene,Liril,05-06-2024,1,145,145
+T0000399,C00092,Munipile Oil,Beauty & Hygiene,Muniyal Ayurveda,15-05-2024,2,105,210
+T0000400,C00092,Powder - Moringa Leaf,Beauty & Hygiene,Tiera,26-02-2024,1,125,125
+T0000401,C00092,Munident Oil,Beauty & Hygiene,Muniyal Ayurveda,06-05-2024,1,245,245
+T0000402,C00092,Chia Seeds,Gourmet & World Food,Tiera,06-02-2024,1,195,195
+T0000403,C00092,Muniheal Oil,Beauty & Hygiene,Muniyal Ayurveda,21-03-2024,2,120,240
+T0000404,C00093,Sebium Gel Moussant,Beauty & Hygiene,Bioderma,17-02-2024,3,840,2520
+T0000405,C00093,White Objective Moussant,Beauty & Hygiene,Bioderma,10-06-2024,1,1590,1590
+T0000406,C00093,Sebium Serum,Beauty & Hygiene,Bioderma,14-03-2024,1,1680,1680
+T0000407,C00093,White Objective Moussant,Beauty & Hygiene,Bioderma,28-01-2024,1,1590,1590
+T0000408,C00093,Sebium Serum,Beauty & Hygiene,Bioderma,25-06-2024,1,1680,1680
+T0000409,C00093,White Objective Moussant,Beauty & Hygiene,Bioderma,01-01-2024,1,1590,1590
+T0000410,C00094,Cheese Spread - Spicy Garlic,"Bakery, Cakes & Dairy",Amul,16-05-2024,1,80,80
+T0000411,C00094,Nuts Hazelnuts regular,Gourmet & World Food,Sapphire,07-06-2024,2,400,800
+T0000412,C00094,Quadratini Tiramisu,Gourmet & World Food,Loacker,30-01-2024,2,349,698
+T0000413,C00095,Tulsi-Ginger Herbal Infusion,Gourmet & World Food,Teamonk,29-03-2024,1,280,280
+T0000414,C00095,Sandalwood & Saffron Facial Ubtan Pack - Soothing & After Glow,Beauty & Hygiene,Aloe Veda,08-03-2024,1,607.5,607.5
+T0000415,C00095,"Toothbrush Pro - Health Gum Care, Soft",Beauty & Hygiene,Oral-B,11-01-2024,1,75,75
+T0000416,C00095,Diaper Pants - Large,Baby Care,Pampers ,05-04-2024,1,908.56,908.56
+T0000417,C00095,Skin Defense Mud Face Pack,Beauty & Hygiene,Vlcc,07-05-2024,2,189,378
+T0000418,C00095,Fruit Power Juice Litchi 1 L + Guava/Amrud 1 L + Mixed Fruits 1 L,Beverages,Real,08-03-2024,1,231.24,231.24
+T0000419,C00096,"Deospray For Men - Intense, No Alcohol",Beauty & Hygiene,Cinthol,10-05-2024,1,185.25,185.25
+T0000420,C00096,Shin Ramyun Noodles,Gourmet & World Food,Nongshim,15-03-2024,2,95,190
+T0000421,C00096,Dotted Condoms,Beauty & Hygiene,Kamasutra,20-01-2024,1,150,150
+T0000422,C00096,Bio Papaya Scrub Wash,Beauty & Hygiene,BIOTIQUE,22-06-2024,1,202.5,202.5
+T0000423,C00096,Age Miracle Eye Cream,Beauty & Hygiene,Ponds,03-02-2024,1,559.2,559.2
+T0000424,C00096,Multi-Utility Transparent Plastic Basket/Tray - Small,Cleaning & Household,Nakoda,25-06-2024,1,269,269
+T0000425,C00096,Day Protector UV EX SPF 30 PA,Beauty & Hygiene,Avene,18-01-2024,1,1450,1450
+T0000426,C00097,Sandal & Vanilla Soap,Beauty & Hygiene,INATUR ,25-01-2024,1,180,180
+T0000427,C00097,"Steel Lunch Box/Tiffin Box - Duo Star, Pink Opaque","Kitchen, Garden & Pets",Signoraware,28-04-2024,1,690,690
+T0000428,C00097,Baby Dry Medium (6-11 kg) - 66 Diapers,Baby Care,Pampers ,14-04-2024,1,828.71,828.71
+T0000429,C00097,"Paper Napkins - Circle, Multicolour",Cleaning & Household,BB Home,03-06-2024,2,49,98
+T0000430,C00097,Panty Liners - Herbs Verbena,Beauty & Hygiene,Bella,01-03-2024,1,183,183
+T0000431,C00098,Sensitive Toothpaste - Whitening,Beauty & Hygiene,Sensodyne,02-06-2024,1,254.8,254.8
+T0000432,C00098,Green Coffee Powder,Gourmet & World Food,NUTRIWISH,16-01-2024,2,750,1500
+T0000433,C00098,T & G Adv. Sun Care Daily Moisturising Lotion - SPF 30,Beauty & Hygiene,Revlon,19-01-2024,1,172.5,172.5
+T0000434,C00098,Aluminium Induction Base Sauce Pan - Silver,"Kitchen, Garden & Pets",HAZEL,29-04-2024,1,499,499
+T0000435,C00098,Dry Fruits - Extra Light Broken Walnut Kernels,Gourmet & World Food,Ziofit,25-06-2024,1,237.5,237.5
+T0000436,C00098,Knife - Tomato,"Kitchen, Garden & Pets",Fackelmann,01-05-2024,1,129,129
+T0000437,C00099,Glass Amaze Air Tight Jar - Arena,"Kitchen, Garden & Pets",Iveo ,09-03-2024,1,289,289
+T0000438,C00099,Premium Round Plastic Container With Lid - Multicolour,"Kitchen, Garden & Pets",Mastercook,19-06-2024,1,79,79
+T0000439,C00099,Gel,Beauty & Hygiene,Volini,17-03-2024,2,120,240
+T0000440,C00099,Rainbath Refreshing Shower & Bath Gel,Beauty & Hygiene,Neutrogena,07-06-2024,1,810,810
+T0000441,C00099,Puja Wicks - Lingam Batti,Cleaning & Household,Jaji,29-04-2024,1,15,15
+T0000442,C00099,Herbal Watermelon Soap,Beauty & Hygiene,Khadi Natural,10-05-2024,2,70,140
+T0000443,C00099,ARJUNIN Capsules -The Cardiac Tonic,Beauty & Hygiene,Charak,25-06-2024,1,115,115
+T0000444,C00099,"Lavangadi Vati - Respiratory Conditions, 300mg",Beauty & Hygiene,Sri Sri Tattva,04-03-2024,1,80,80
