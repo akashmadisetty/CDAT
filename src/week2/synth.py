@@ -341,7 +341,7 @@ if __name__ == "__main__":
     
     # Generate customers
     print("\n👥 Generating customers...")
-    customers = generator.generate_customers(n_customers=100)  # QUICK TEST: 100 customers
+    customers = generator.generate_customers(n_customers=1500)  # QUICK TEST: 100 customers
     print(f"✓ Generated {len(customers):,} customers")
     print(f"\nPersona distribution:")
     print(customers['persona'].value_counts())
@@ -350,7 +350,7 @@ if __name__ == "__main__":
     print("\n🛒 Generating transactions...")
     transactions = generator.generate_transactions(
         customers, 
-        n_transactions=500,  # QUICK TEST: 500 transactions
+        n_transactions=15000,  # QUICK TEST: 500 transactions
         start_date='2024-01-01',
         end_date='2024-06-30'
     )
