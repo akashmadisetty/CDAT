@@ -28,10 +28,10 @@ os.makedirs(OUTPUT_DIR, exist_ok=True)
 # Domain pairs from Week 1
 DOMAIN_PAIRS = [
     {
-        'id': 1,
+        'id': 3,
         'name': 'Cleaning & Household → Foodgrains, Oil & Masala',
-        'source_file': '../week1/domain_pair1_source_FINAL.csv',
-        'target_file': '../week1/domain_pair1_target_FINAL.csv',
+        'source_file': '../week1/domain_pair3_source_FINAL.csv',
+        'target_file': '../week1/domain_pair3_target_FINAL.csv',
         'expected_transfer': 'HIGH'
     }
 ]
