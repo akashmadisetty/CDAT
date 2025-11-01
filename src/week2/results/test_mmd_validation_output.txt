@@ -1,0 +1,48 @@
+PS D:\ADA Course Proj\CDAT\src\member3\validation> python .\test_mmd_validation.py
+============================================================
+MMD VALIDATION TEST SUITE
+============================================================
+TEST 1: Identical Distributions
+--------------------------------------------------
+MMD value: 0.066203
+Expected: ~0.0 (close to zero)
+Result: ✅ PASS
+
+TEST 2: Different Distributions
+--------------------------------------------------
+MMD value: 1.069348
+Expected: Large (>1.0)
+Result: ✅ PASS
+
+TEST 3: Monotonic Increase Property
+--------------------------------------------------
+Shift=0.0 → MMD=0.0662
+Shift=0.5 → MMD=0.2170
+Shift=1.0 → MMD=0.4909
+Shift=2.0 → MMD=0.8451
+Shift=5.0 → MMD=1.1515
+
+Result: ✅ PASS
+
+✓ Saved: mmd_validation_plot.png
+
+TEST 4: Symmetry Property
+--------------------------------------------------
+MMD(Source→Target): 0.835054
+MMD(Target→Source): 0.835054
+Difference: 0.000000
+Result: ✅ PASS
+
+TEST 5: Variance Sensitivity
+--------------------------------------------------
+Source: mean=0, std=1
+Target: mean=0, std=3
+MMD value: 0.427090
+Expected: Moderate (0.2-0.8)
+Result: ✅ PASS
+
+============================================================
+SUMMARY
+============================================================
+Tests passed: 5/5
+Success rate: 100.0%
