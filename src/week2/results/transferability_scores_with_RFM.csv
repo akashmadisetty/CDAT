@@ -1,0 +1,5 @@
+pair_name,n_source_customers,n_target_customers,mmd,js_divergence,correlation_stability,ks_statistic,wasserstein_distance,transferability_score,recommendation,strategy
+"Pair 1: Cleaning & Household → Foodgrains, Oil & Masala",1500,1200,0.07333033944514654,0.09776373809216153,0.9981908393080633,0.04827777777777778,0.07425362822583727,0.9397261243914351,HIGH - Transfer as-is,Use source model directly with minimal/no fine-tuning
+Pair 2: Snacks & Branded Foods → Fruits & Vegetables,1500,1200,0.3094888107201373,0.20011774225275894,0.9988592463630447,0.17544444444444443,0.3083059420335832,0.8260266365775855,HIGH - Transfer as-is,Use source model directly with minimal/no fine-tuning
+Pair 3: Premium Segment → Budget Segment,1500,1200,0.548840754978653,0.30979743580490376,0.9991720045033258,0.3291111111111111,0.5226299978824559,0.7312080263436149,MODERATE - Fine-tune recommended,Use 10-30% of target data for fine-tuning
+Pair 4: Popular Brands → Niche Brands,1500,1200,0.05391476429071593,0.09085794901823259,0.9973064858507279,0.04,0.08653420876346091,0.9471470871251871,HIGH - Transfer as-is,Use source model directly with minimal/no fine-tuning
