@@ -649,7 +649,7 @@ class FrameworkCalibration:
         # Save report
         report_content = "\n".join(report_lines)
         
-        with open(output_path, 'w') as f:
+        with open(output_path, 'w', encoding='utf-8') as f:
             f.write(report_content)
         
         print(f"\n✓ Calibration report saved to: {output_path}")

@@ -84,9 +84,9 @@ class DecisionEngine:
     """
     
     def __init__(self, 
-                 high_threshold=0.85,
-                 moderate_threshold=0.70,
-                 low_threshold=0.40,
+                 high_threshold=0.8260,
+                 moderate_threshold=0.7312,
+                 low_threshold=0.50,
                  metric_weights=None):
         """
         Initialize the decision engine
@@ -94,13 +94,13 @@ class DecisionEngine:
         Parameters:
         -----------
         high_threshold : float
-            Minimum score for HIGH transferability (default: 0.85)
-            Will be calibrated using isotonic regression on experiment results
+            Minimum score for HIGH transferability (default: 0.8260)
+            Calibrated using isotonic regression on Week 2 experimental data
         moderate_threshold : float
-            Minimum score for MODERATE transferability (default: 0.70)
-            Will be calibrated using isotonic regression on experiment results
+            Minimum score for MODERATE transferability (default: 0.7312)
+            Calibrated using isotonic regression on Week 2 experimental data
         low_threshold : float
-            Minimum score for LOW transferability (default: 0.40)
+            Minimum score for LOW transferability (default: 0.50)
             Below this, transfer not recommended
         metric_weights : dict, optional
             Custom weights for individual metrics
@@ -110,8 +110,8 @@ class DecisionEngine:
         self.low_threshold = low_threshold
         self.metric_weights = metric_weights
         
-        # These thresholds will be calibrated using isotonic regression
-        # on actual experimental results (Week 3-4 experiment data)
+        # These thresholds are calibrated using isotonic regression
+        # on actual experimental results (Week 2 domain pairs)
         # See calibration.py for the calibration process
     
     def classify_transferability(self, composite_score: float) -> TransferabilityLevel:

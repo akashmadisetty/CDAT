@@ -108,7 +108,25 @@ class TransferLearningFramework:
             raise FileNotFoundError(f"Model file not found: {model_path}")
         
         with open(model_path, 'rb') as f:
-            self.source_model = pickle.load(f)
+            loaded_obj = pickle.load(f)
+        
+        # Handle case where pickle file contains a dict with 'model' key
+        if isinstance(loaded_obj, dict):
+            if 'model' in loaded_obj:
+                self.source_model = loaded_obj['model']
+            elif 'kmeans_model' in loaded_obj:
+                self.source_model = loaded_obj['kmeans_model']
+            else:
+                # Assume the dict IS the model info, take first model-like value
+                for key, value in loaded_obj.items():
+                    if hasattr(value, 'predict'):
+                        self.source_model = value
+                        break
+                else:
+                    raise ValueError(f"Loaded dict does not contain a model object. Keys: {list(loaded_obj.keys())}")
+        else:
+            # Direct model object
+            self.source_model = loaded_obj
         
         print(f"✓ Loaded source model from: {model_path}")
     

@@ -334,15 +334,15 @@ class TransferabilityMetrics:
             Composite transferability score in range [0, 1]
             Higher = better transferability
         """
-        # Default weights based on research literature (from Week 2)
-        # These match the empirically validated weights from Week 2 analysis
+        # Default weights based on calibration results
+        # These are data-driven weights optimized on Week 2 experimental data
         if weights is None:
             weights = {
-                'mmd': 0.35,              # Most important: strongest predictor in domain adaptation
-                'js_divergence': 0.25,    # Robust distribution comparison
-                'correlation_stability': 0.20,  # Captures feature relationships
-                'ks_statistic': 0.10,     # Simple but effective
-                'wasserstein_distance': 0.10   # Optimal transport perspective
+                'mmd': 0.30,              # Primary metric - captures overall distribution difference
+                'js_divergence': 0.25,    # Information-theoretic distance measure
+                'correlation_stability': 0.20,  # Ensures feature relationships transfer
+                'ks_statistic': 0.15,     # Non-parametric distribution test
+                'wasserstein_distance': 0.10   # Geometric distance measure
             }
         
         # Normalize metrics to [0, 1] range where higher = better

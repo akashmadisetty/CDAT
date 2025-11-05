@@ -378,7 +378,7 @@ class FrameworkValidator:
         # Save report
         report_content = "\n".join(lines)
         
-        with open(output_path, 'w') as f:
+        with open(output_path, 'w',encoding="utf-8") as f:
             f.write(report_content)
         
         print(f"\n✓ Validation report saved to: {output_path}")
