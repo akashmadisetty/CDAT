@@ -4,6 +4,7 @@ __pycache__/
 *$py.class
 
 dataset_loader.py
+src/week3/demo_output
 
 # C extensions
 *.so
