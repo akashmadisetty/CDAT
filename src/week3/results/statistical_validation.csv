@@ -1,0 +1,5 @@
+pair_name,week1_score,transfer_quality_pct,predicted_quality,prediction_error
+"Cleaning and Household → Foodgrains,Oil & Masala",0.892,100.75434040624567,102.0652945341689,1.3109541279232246
+Snacks & Branded Foods → Fruits & Vegetables,0.763,82.94905982097438,81.17495149889908,-1.7741083220753069
+Premium → Budget Segment,0.715,72.01486224952005,73.40180060205446,1.3869383525344148
+Popular → Niche Brands,0.874,100.0741471062346,99.15036294785219,-0.9237841583824178
