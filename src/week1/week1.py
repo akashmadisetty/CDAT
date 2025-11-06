@@ -276,34 +276,47 @@ transferability_results = []
 for cat1, cat2 in combinations(all_categories, 2):
     source_df = df[df['category'] == cat1]
     target_df = df[df['category'] == cat2]
-    
+
     # Skip if too few samples
     if len(source_df) < 30 or len(target_df) < 30:
         continue
-    
+
+    # Per-pair features: drop 'rating_clean' if either domain is Fruits & Vegetables
+    per_pair_features = feature_cols.copy()
+    if any("Fruits & Vegetables" == c for c in (cat1, cat2)):
+        if 'rating_clean' in per_pair_features:
+            per_pair_features = [f for f in per_pair_features if f != 'rating_clean']
+            print(f"  ℹ️  Dropped 'rating_clean' for pair: {cat1} → {cat2} (contains Fruits & Vegetables)")
+
     try:
         score, metrics = calculate_transferability_score(
-            source_df, target_df, feature_cols
+            source_df, target_df, per_pair_features
         )
-        
+
+        # Validate that all metrics are computed successfully
+        if any(v is None or (isinstance(v, float) and (np.isnan(v) or np.isinf(v))) \
+               for v in [score] + list(metrics.values())):
+            print(f"  ⚠️  Invalid metrics for {cat1} → {cat2}, skipping")
+            continue
+
         result = {
             'source': cat1,
             'target': cat2,
             'transferability_score': score,
-            'mmd': metrics['mmd'],
-            'js_divergence': metrics['js_divergence'],
-            'correlation_stability': metrics['correlation_stability'],
-            'ks_statistic': metrics['ks_statistic'],
-            'wasserstein': metrics['wasserstein'],
+            'mmd': metrics.get('mmd'),
+            'js_divergence': metrics.get('js_divergence'),
+            'correlation_stability': metrics.get('correlation_stability'),
+            'ks_statistic': metrics.get('ks_statistic'),
+            'wasserstein': metrics.get('wasserstein'),
             'n_source': len(source_df),
             'n_target': len(target_df),
             'avg_price_source': source_df['sale_price'].mean(),
             'avg_price_target': target_df['sale_price'].mean()
         }
         transferability_results.append(result)
-        
+
     except Exception as e:
-        print(f"  ⚠️  Error: {cat1} → {cat2}")
+        print(f"  ⚠️  Error computing metrics for {cat1} → {cat2}: {e}")
         continue
 
 # Convert to DataFrame
