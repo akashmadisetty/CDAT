@@ -1,1 +1,3 @@
-
+pair_id,domain,n_customers,n_transactions,avg_recency,avg_frequency,avg_monetary,file,customer_id_min,customer_id_max
+2,source,1500,14249,23.142666666666667,9.499333333333333,1661.2915200000002,D:\Akash\B.Tech\5th Sem\ADA\CDAT\src\week2\domain_pair2_source_RFM.csv,C03000,C04499
+2,target,1200,11403,23.256666666666668,9.5025,5702.442716666667,D:\Akash\B.Tech\5th Sem\ADA\CDAT\src\week2\domain_pair2_target_RFM.csv,C04500,C05699

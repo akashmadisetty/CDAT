@@ -1,0 +1,7 @@
+Pair 1: Cleaning & Household → Foodgrains (No Finetune)
+Pair 2: Snacks → Garden, Kitchen (Partial)
+Pair 3: Premium → Budget (On the whole dataset) (Partial)
+Pair 4: Premimum -> Mass-Market Beauty Products (Partial)
+Pair 5: Eggs, Meat and Fish -> Baby Care (New Model)
+Pair 6: Baby Care  -> Bakery, Cakes and Dairy (New Model)
+Pair 7: Beverages -> Gourmet & World Food (No finetune)

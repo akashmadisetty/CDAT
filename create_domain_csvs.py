@@ -20,11 +20,8 @@ print(f"✓ Loaded {len(df):,} products")
 
 # Define categories to extract
 target_categories = [
-    'Kitchen, Garden & Pets',
-    'Beauty & Hygiene',
-    'Eggs, Meat & Fish',
-    'Baby Care',
-    'Bakery, Cakes & Dairy'
+    'Beverages',
+    'Gourmet & World Food'
 ]
 
 print(f"\n📋 Target categories: {len(target_categories)}")
