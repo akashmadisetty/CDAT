@@ -1,7 +1,7 @@
 # MEMBER 3: TRANSFER LEARNING PREDICTIONS
 ## Week 2 → Week 3 Hypothesis Document
 
-**Generated:** 2025-11-04 11:24:20  
+**Generated:** 2025-11-06 22:56:10  
 **Author:** Member 3 (Research Lead)  
 **Purpose:** Document predictions BEFORE running Week 3 experiments (Scientific Method)
 
@@ -13,10 +13,13 @@ Based on Week 2 RFM transferability analysis, we predict the following outcomes 
 
 | Domain Pair | RFM Score | Prediction | Confidence |
 |-------------|-----------|------------|------------|
-| Pair 1: Cleaning & Household → Foodgrains, Oil & Masala | 0.940 | YES - Direct transfer | HIGH |
-| Pair 2: Snacks & Branded Foods → Fruits & Vegetables | 0.826 | YES - Direct transfer | HIGH |
-| Pair 3: Premium Segment → Budget Segment | 0.731 | PARTIAL - Needs fine-tuning | MODERATE |
-| Pair 4: Popular Brands → Niche Brands | 0.947 | YES - Direct transfer | HIGH |
+| Pair 1: Cleaning & Household → Foodgrains | 0.940 | YES - Direct transfer | HIGH |
+| Pair 2: Snacks → Garden, Kitchen | 0.775 | YES - Direct transfer | HIGH |
+| Pair 3: Premium → Budget | 0.731 | PARTIAL - Needs fine-tuning | MODERATE |
+| Pair 4: Premium → Mass-Market Beauty Products | 0.702 | PARTIAL - Needs fine-tuning | MODERATE |
+| Pair 5: Eggs, Meat and Fish → Baby Care | 0.866 | YES - Direct transfer | HIGH |
+| Pair 6: Baby Care → Bakery, Cakes and Dairy | 0.807 | YES - Direct transfer | HIGH |
+| Pair 7: Beverages → Gourmet & World Food | 0.898 | YES - Direct transfer | HIGH |
 
 ---
 
@@ -46,7 +49,7 @@ Week 2 (NOW)              Week 3 (LATER)              Week 4 (FINAL)
 ## 🎯 Detailed Predictions by Domain Pair
 
 
-### 1. Pair 1: Cleaning & Household → Foodgrains, Oil & Masala
+### 1. Pair 1: Cleaning & Household → Foodgrains
 
 **RFM Transferability Score:** 0.940  
 **Recommendation Level:** HIGH
@@ -57,7 +60,7 @@ Model will transfer successfully with minimal/no fine-tuning
 #### 🎲 Expected Outcomes
 
 - **Transfer Success:** YES - Direct transfer
-- **Expected Silhouette Score:** 0.457 (±0.05)
+- **Expected Silhouette Score:** 0.454 (±0.05)
 - **Confidence Level:** HIGH
 
 #### 🧠 Reasoning
@@ -103,9 +106,9 @@ Train From Scratch:
 
 ---
 
-### 2. Pair 2: Snacks & Branded Foods → Fruits & Vegetables
+### 2. Pair 2: Snacks → Garden, Kitchen
 
-**RFM Transferability Score:** 0.826  
+**RFM Transferability Score:** 0.775  
 **Recommendation Level:** HIGH
 
 #### 📊 Hypothesis
@@ -114,11 +117,11 @@ Model will transfer successfully with minimal/no fine-tuning
 #### 🎲 Expected Outcomes
 
 - **Transfer Success:** YES - Direct transfer
-- **Expected Silhouette Score:** 0.391 (±0.05)
+- **Expected Silhouette Score:** 0.433 (±0.05)
 - **Confidence Level:** HIGH
 
 #### 🧠 Reasoning
-RFM score 0.826 indicates very similar customer behavior patterns. Expect direct transfer to work well.
+RFM score 0.775 indicates very similar customer behavior patterns. Expect direct transfer to work well.
 
 #### ✅ Success Criteria (Week 3)
 
@@ -160,7 +163,7 @@ Train From Scratch:
 
 ---
 
-### 3. Pair 3: Premium Segment → Budget Segment
+### 3. Pair 3: Premium → Budget
 
 **RFM Transferability Score:** 0.731  
 **Recommendation Level:** MODERATE
@@ -171,7 +174,7 @@ Model will need fine-tuning but should improve over training from scratch
 #### 🎲 Expected Outcomes
 
 - **Transfer Success:** PARTIAL - Needs fine-tuning
-- **Expected Silhouette Score:** 0.292 (±0.05)
+- **Expected Silhouette Score:** 0.271 (±0.05)
 - **Confidence Level:** MODERATE
 
 #### 🧠 Reasoning
@@ -217,9 +220,66 @@ Train From Scratch:
 
 ---
 
-### 4. Pair 4: Popular Brands → Niche Brands
+### 4. Pair 4: Premium → Mass-Market Beauty Products
 
-**RFM Transferability Score:** 0.947  
+**RFM Transferability Score:** 0.702  
+**Recommendation Level:** MODERATE
+
+#### 📊 Hypothesis
+Model will need fine-tuning but should improve over training from scratch
+
+#### 🎲 Expected Outcomes
+
+- **Transfer Success:** PARTIAL - Needs fine-tuning
+- **Expected Silhouette Score:** 0.350 (±0.05)
+- **Confidence Level:** MODERATE
+
+#### 🧠 Reasoning
+RFM score 0.702 shows moderate similarity. Transfer learning with fine-tuning should outperform training from scratch.
+
+#### ✅ Success Criteria (Week 3)
+
+- Transferred model silhouette ≥ 0.25
+- After fine-tuning, outperforms scratch by ≥10%
+- Fine-tuning improves transfer by ≥10%
+- Converges faster than training from scratch
+
+#### 📝 Week 3 Actual Results (TO BE FILLED)
+
+```
+Source Model Performance:
+- Silhouette Score: _______
+- Davies-Bouldin: _______
+- Calinski-Harabasz: _______
+
+Transfer (No Fine-tuning):
+- Silhouette Score: _______
+- Davies-Bouldin: _______
+- Calinski-Harabasz: _______
+
+Transfer (With Fine-tuning):
+- Silhouette Score: _______
+- Davies-Bouldin: _______
+- Calinski-Harabasz: _______
+
+Train From Scratch:
+- Silhouette Score: _______
+- Davies-Bouldin: _______
+- Calinski-Harabasz: _______
+```
+
+**Prediction Outcome:** ⬜ CORRECT  ⬜ INCORRECT  ⬜ PARTIAL
+
+**Notes:**
+```
+[To be filled in Week 3]
+```
+
+---
+
+### 5. Pair 5: Eggs, Meat and Fish → Baby Care
+
+**RFM Transferability Score:** 0.866  
 **Recommendation Level:** HIGH
 
 #### 📊 Hypothesis
@@ -228,11 +288,125 @@ Model will transfer successfully with minimal/no fine-tuning
 #### 🎲 Expected Outcomes
 
 - **Transfer Success:** YES - Direct transfer
-- **Expected Silhouette Score:** 0.361 (±0.05)
+- **Expected Silhouette Score:** 0.433 (±0.05)
 - **Confidence Level:** HIGH
 
 #### 🧠 Reasoning
-RFM score 0.947 indicates very similar customer behavior patterns. Expect direct transfer to work well.
+RFM score 0.866 indicates very similar customer behavior patterns. Expect direct transfer to work well.
+
+#### ✅ Success Criteria (Week 3)
+
+- Transferred model silhouette ≥ 0.35
+- Transfer performs within 10% of source model
+- Transfer outperforms training from scratch by ≥15%
+- Fine-tuning shows minimal improvement (<5%)
+
+#### 📝 Week 3 Actual Results (TO BE FILLED)
+
+```
+Source Model Performance:
+- Silhouette Score: _______
+- Davies-Bouldin: _______
+- Calinski-Harabasz: _______
+
+Transfer (No Fine-tuning):
+- Silhouette Score: _______
+- Davies-Bouldin: _______
+- Calinski-Harabasz: _______
+
+Transfer (With Fine-tuning):
+- Silhouette Score: _______
+- Davies-Bouldin: _______
+- Calinski-Harabasz: _______
+
+Train From Scratch:
+- Silhouette Score: _______
+- Davies-Bouldin: _______
+- Calinski-Harabasz: _______
+```
+
+**Prediction Outcome:** ⬜ CORRECT  ⬜ INCORRECT  ⬜ PARTIAL
+
+**Notes:**
+```
+[To be filled in Week 3]
+```
+
+---
+
+### 6. Pair 6: Baby Care → Bakery, Cakes and Dairy
+
+**RFM Transferability Score:** 0.807  
+**Recommendation Level:** HIGH
+
+#### 📊 Hypothesis
+Model will transfer successfully with minimal/no fine-tuning
+
+#### 🎲 Expected Outcomes
+
+- **Transfer Success:** YES - Direct transfer
+- **Expected Silhouette Score:** 0.454 (±0.05)
+- **Confidence Level:** HIGH
+
+#### 🧠 Reasoning
+RFM score 0.807 indicates very similar customer behavior patterns. Expect direct transfer to work well.
+
+#### ✅ Success Criteria (Week 3)
+
+- Transferred model silhouette ≥ 0.35
+- Transfer performs within 10% of source model
+- Transfer outperforms training from scratch by ≥15%
+- Fine-tuning shows minimal improvement (<5%)
+
+#### 📝 Week 3 Actual Results (TO BE FILLED)
+
+```
+Source Model Performance:
+- Silhouette Score: _______
+- Davies-Bouldin: _______
+- Calinski-Harabasz: _______
+
+Transfer (No Fine-tuning):
+- Silhouette Score: _______
+- Davies-Bouldin: _______
+- Calinski-Harabasz: _______
+
+Transfer (With Fine-tuning):
+- Silhouette Score: _______
+- Davies-Bouldin: _______
+- Calinski-Harabasz: _______
+
+Train From Scratch:
+- Silhouette Score: _______
+- Davies-Bouldin: _______
+- Calinski-Harabasz: _______
+```
+
+**Prediction Outcome:** ⬜ CORRECT  ⬜ INCORRECT  ⬜ PARTIAL
+
+**Notes:**
+```
+[To be filled in Week 3]
+```
+
+---
+
+### 7. Pair 7: Beverages → Gourmet & World Food
+
+**RFM Transferability Score:** 0.898  
+**Recommendation Level:** HIGH
+
+#### 📊 Hypothesis
+Model will transfer successfully with minimal/no fine-tuning
+
+#### 🎲 Expected Outcomes
+
+- **Transfer Success:** YES - Direct transfer
+- **Expected Silhouette Score:** 0.384 (±0.05)
+- **Confidence Level:** HIGH
+
+#### 🧠 Reasoning
+RFM score 0.898 indicates very similar customer behavior patterns. Expect direct transfer to work well.
 
 #### ✅ Success Criteria (Week 3)
 
@@ -358,10 +532,13 @@ After running experiments, validate each prediction:
 
 | Pair | RFM Score | Prediction | Expected Silhouette | Actual Silhouette | Correct? |
 |------|-----------|------------|---------------------|-------------------|----------|
-| Pair 1: Cleaning & Household → Foodgrains, Oil & Masala | 0.940 | YES - Direct transfer | 0.457 | _____ | ⬜ |
-| Pair 2: Snacks & Branded Foods → Fruits & Vegetables | 0.826 | YES - Direct transfer | 0.391 | _____ | ⬜ |
-| Pair 3: Premium Segment → Budget Segment | 0.731 | PARTIAL - Needs fine-tuning | 0.292 | _____ | ⬜ |
-| Pair 4: Popular Brands → Niche Brands | 0.947 | YES - Direct transfer | 0.361 | _____ | ⬜ |
+| Pair 1: Cleaning & Household → Foodgrains | 0.940 | YES - Direct transfer | 0.454 | _____ | ⬜ |
+| Pair 2: Snacks → Garden, Kitchen | 0.775 | YES - Direct transfer | 0.433 | _____ | ⬜ |
+| Pair 3: Premium → Budget | 0.731 | PARTIAL - Needs fine-tuning | 0.271 | _____ | ⬜ |
+| Pair 4: Premium → Mass-Market Beauty Products | 0.702 | PARTIAL - Needs fine-tuning | 0.350 | _____ | ⬜ |
+| Pair 5: Eggs, Meat and Fish → Baby Care | 0.866 | YES - Direct transfer | 0.433 | _____ | ⬜ |
+| Pair 6: Baby Care → Bakery, Cakes and Dairy | 0.807 | YES - Direct transfer | 0.454 | _____ | ⬜ |
+| Pair 7: Beverages → Gourmet & World Food | 0.898 | YES - Direct transfer | 0.384 | _____ | ⬜ |
 
 ---
 
