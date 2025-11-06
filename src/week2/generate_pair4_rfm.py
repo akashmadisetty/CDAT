@@ -250,11 +250,9 @@ class BeautyCustomerGenerator:
         scores = []
         
         for _, product in filtered_products.iterrows():
-            score = 0
-            
             # 1. Price factor (using sale_price)
             price_normalized = product['sale_price'] / (filtered_products['sale_price'].max() + 1e-6)
-            price_score = (1 - price_normalized) * customer['price_sensitivity']
+            price_score = max(0, (1 - price_normalized) * customer['price_sensitivity'])
             
             # 2. Brand Premium Index factor (NEW FOR BEAUTY!)
             if 'brand_premium_index' in product.index and pd.notna(product['brand_premium_index']):
@@ -262,10 +260,10 @@ class BeautyCustomerGenerator:
                 
                 if self.is_premium:
                     # Premium customers prefer high brand_premium_index
-                    brand_score = brand_premium_normalized * (1 - customer['price_sensitivity'])
+                    brand_score = max(0, brand_premium_normalized * (1 - customer['price_sensitivity']))
                 else:
                     # Mass-market customers prefer lower brand_premium_index
-                    brand_score = (1 - brand_premium_normalized) * customer['price_sensitivity']
+                    brand_score = max(0, (1 - brand_premium_normalized) * customer['price_sensitivity'])
             else:
                 brand_score = 0.5
             
@@ -275,10 +273,10 @@ class BeautyCustomerGenerator:
             if 'price_retention' in product.index and pd.notna(product['price_retention']):
                 if self.is_premium:
                     # Premium customers comfortable with high price retention
-                    retention_score = product['price_retention'] * (1 - customer['price_sensitivity'])
+                    retention_score = max(0, product['price_retention'] * (1 - customer['price_sensitivity']))
                 else:
                     # Mass-market customers prefer discounts (low retention)
-                    retention_score = (1 - product['price_retention']) * customer['price_sensitivity']
+                    retention_score = max(0, (1 - product['price_retention']) * customer['price_sensitivity'])
             else:
                 retention_score = 0.5
             
@@ -287,18 +285,18 @@ class BeautyCustomerGenerator:
             
             # 5. Quality factor (rating)
             if 'rating_clean' in product.index and pd.notna(product['rating_clean']):
-                quality_score = (product['rating_clean'] / 5.0) * customer['quality_importance']
+                quality_score = max(0, (product['rating_clean'] / 5.0) * customer['quality_importance'])
             else:
                 quality_score = 0.5 * customer['quality_importance']
             
-            # Weighted combination
-            score = (
+            # Weighted combination (ensure minimum positive score)
+            score = max(0.001, (
                 price_score * 0.25 +
                 brand_score * 0.25 +
                 retention_score * 0.20 +
                 subcategory_score * 0.15 +
                 quality_score * 0.15
-            )
+            ))
             
             scores.append(score)
         
