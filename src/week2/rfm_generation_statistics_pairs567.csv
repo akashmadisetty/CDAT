@@ -1,0 +1,7 @@
+pair_id,domain,n_customers,n_transactions,avg_recency,avg_frequency,avg_monetary,file,customer_id_min,customer_id_max
+5,source,1500,14266,21.772666666666666,9.510666666666667,3641.2487733333332,/home/workstation7/akash/ada/CDAT/src/week2/domain_pair5_source_RFM.csv,C12000,C13499
+5,target,1200,11385,22.390833333333333,9.4875,5735.915983333334,/home/workstation7/akash/ada/CDAT/src/week2/domain_pair5_target_RFM.csv,C13500,C14699
+6,source,1500,14249,25.087333333333333,9.499333333333333,5982.728153333333,/home/workstation7/akash/ada/CDAT/src/week2/domain_pair6_source_RFM.csv,C15000,C16499
+6,target,1200,11393,26.598333333333333,9.494166666666667,1751.00625,/home/workstation7/akash/ada/CDAT/src/week2/domain_pair6_target_RFM.csv,C16500,C17699
+7,source,1500,14239,23.342666666666666,9.492666666666667,2907.5926999999997,/home/workstation7/akash/ada/CDAT/src/week2/domain_pair7_source_RFM.csv,C18000,C19499
+7,target,1200,11397,23.020833333333332,9.4975,3915.5229000000004,/home/workstation7/akash/ada/CDAT/src/week2/domain_pair7_target_RFM.csv,C19500,C20699
