@@ -14,7 +14,7 @@ from datetime import datetime
 def load_week2_scores():
     """Load Week 2 RFM-based transferability scores"""
     
-    week2_file = Path(r'D:\ADA_Project_COPY\CDAT\src\week2\results\transferability_scores_with_RFM.csv')
+    week2_file = Path('../week2/results/transferability_scores_with_RFM.csv')
     
     if not week2_file.exists():
         print(f"❌ Week 2 results not found at: {week2_file}")

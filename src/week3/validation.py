@@ -48,39 +48,63 @@ class FrameworkValidator:
     def _load_domain_pairs(self):
         """Load all 4 domain pairs configuration"""
         pairs = [
-            {
-                'id': 'pair1',
-                'name': 'Cleaning & Household → Foodgrains, Oil & Masala',
-                'source_rfm': f'{self.week2_dir}/domain_pair1_source_RFM.csv',
-                'target_rfm': f'{self.week2_dir}/domain_pair1_target_RFM.csv',
-                'expected_level': 'HIGH',
-                'model': f'{self.week2_dir}/models/domain_pair1_rfm_kmeans_model.pkl'
-            },
-            {
-                'id': 'pair2',
-                'name': 'Snacks & Branded Foods → Fruits & Vegetables',
-                'source_rfm': f'{self.week2_dir}/domain_pair2_source_RFM.csv',
-                'target_rfm': f'{self.week2_dir}/domain_pair2_target_RFM.csv',
-                'expected_level': 'HIGH',
-                'model': f'{self.week2_dir}/models/domain_pair2_rfm_kmeans_model.pkl'
-            },
-            {
-                'id': 'pair3',
-                'name': 'Premium Segment → Budget Segment',
-                'source_rfm': f'{self.week2_dir}/domain_pair3_source_RFM.csv',
-                'target_rfm': f'{self.week2_dir}/domain_pair3_target_RFM.csv',
-                'expected_level': 'MODERATE',
-                'model': f'{self.week2_dir}/models/domain_pair3_rfm_kmeans_model.pkl'
-            },
-            {
-                'id': 'pair4',
-                'name': 'Popular Brands → Niche Brands',
-                'source_rfm': f'{self.week2_dir}/domain_pair4_source_RFM.csv',
-                'target_rfm': f'{self.week2_dir}/domain_pair4_target_RFM.csv',
-                'expected_level': 'HIGH',
-                'model': f'{self.week2_dir}/models/domain_pair4_rfm_kmeans_model.pkl'
-            }
-        ]
+        {
+            'id': 'pair1',
+            'name': 'Cleaning & Household → Foodgrains',
+            'source_rfm': f'{self.week2_dir}/domain_pair1_source_RFM.csv',
+            'target_rfm': f'{self.week2_dir}/domain_pair1_target_RFM.csv',
+            'expected_level': 'HIGH',
+            'model': f'{self.week2_dir}/models/domain_pair1_rfm_kmeans_model.pkl'
+        },
+        {
+            'id': 'pair2',
+            'name': 'Snacks → Garden, Kitchen',
+            'source_rfm': f'{self.week2_dir}/domain_pair2_source_RFM.csv',
+            'target_rfm': f'{self.week2_dir}/domain_pair2_target_RFM.csv',
+            'expected_level': 'MODERATE',
+            'model': f'{self.week2_dir}/models/domain_pair2_rfm_kmeans_model.pkl'
+        },
+        {
+            'id': 'pair3',
+            'name': 'Premium → Budget',
+            'source_rfm': f'{self.week2_dir}/domain_pair3_source_RFM.csv',
+            'target_rfm': f'{self.week2_dir}/domain_pair3_target_RFM.csv',
+            'expected_level': 'MODERATE',
+            'model': f'{self.week2_dir}/models/domain_pair3_rfm_kmeans_model.pkl'
+        },
+        {
+            'id': 'pair4',
+            'name': 'Premium → Mass-Market Beauty Products',
+            'source_rfm': f'{self.week2_dir}/domain_pair4_source_RFM.csv',
+            'target_rfm': f'{self.week2_dir}/domain_pair4_target_RFM.csv',
+            'expected_level': 'MODERATE',
+            'model': f'{self.week2_dir}/models/domain_pair4_rfm_kmeans_model.pkl'
+        },
+        {
+            'id': 'pair5',
+            'name': 'Eggs, Meat and Fish → Baby Care',
+            'source_rfm': f'{self.week2_dir}/domain_pair5_source_RFM.csv',
+            'target_rfm': f'{self.week2_dir}/domain_pair5_target_RFM.csv',
+            'expected_level': 'LOW',
+            'model': f'{self.week2_dir}/models/domain_pair5_rfm_kmeans_model.pkl'
+        },
+        {
+            'id': 'pair6',
+            'name': 'Baby Care → Bakery, Cakes and Dairy',
+            'source_rfm': f'{self.week2_dir}/domain_pair6_source_RFM.csv',
+            'target_rfm': f'{self.week2_dir}/domain_pair6_target_RFM.csv',
+            'expected_level': 'LOW',
+            'model': f'{self.week2_dir}/models/domain_pair6_rfm_kmeans_model.pkl'
+        },
+        {
+            'id': 'pair7',
+            'name': 'Beverages → Gourmet & World Food',
+            'source_rfm': f'{self.week2_dir}/domain_pair7_source_RFM.csv',
+            'target_rfm': f'{self.week2_dir}/domain_pair7_target_RFM.csv',
+            'expected_level': 'HIGH',
+            'model': f'{self.week2_dir}/models/domain_pair7_rfm_kmeans_model.pkl'
+        }
+    ]
         
         return pairs
     

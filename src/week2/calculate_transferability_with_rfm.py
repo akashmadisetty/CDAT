@@ -310,32 +310,52 @@ def main():
     output_dir.mkdir(exist_ok=True)
     
     # Domain pair definitions
+        # Domain pair definitions (Week 2 - RFM Based)
     pairs = [
         {
-            'name': 'Pair 1: Cleaning & Household → Foodgrains, Oil & Masala',
+            'name': 'Pair 1: Cleaning & Household → Foodgrains',
             'source_file': 'domain_pair1_source_RFM.csv',
             'target_file': 'domain_pair1_target_RFM.csv',
-            'expected': 'HIGH transferability (similar customer behavior)'
+            'expected': 'HIGH transferability (No Finetune)'
         },
         {
-            'name': 'Pair 2: Snacks & Branded Foods → Fruits & Vegetables',
+            'name': 'Pair 2: Snacks → Garden, Kitchen',
             'source_file': 'domain_pair2_source_RFM.csv',
             'target_file': 'domain_pair2_target_RFM.csv',
-            'expected': 'MODERATE transferability (different purchase patterns)'
+            'expected': 'MODERATE transferability (Partial Finetune)'
         },
         {
-            'name': 'Pair 3: Premium Segment → Budget Segment',
+            'name': 'Pair 3: Premium → Budget',
             'source_file': 'domain_pair3_source_RFM.csv',
             'target_file': 'domain_pair3_target_RFM.csv',
-            'expected': 'LOW transferability (different customer segments)'
+            'expected': 'MODERATE transferability (On full dataset / Partial Finetune)'
         },
         {
-            'name': 'Pair 4: Popular Brands → Niche Brands',
+            'name': 'Pair 4: Premium → Mass-Market Beauty Products',
             'source_file': 'domain_pair4_source_RFM.csv',
             'target_file': 'domain_pair4_target_RFM.csv',
-            'expected': 'LOW-MODERATE transferability (brand loyalty differences)'
+            'expected': 'MODERATE transferability (Partial Finetune)'
+        },
+        {
+            'name': 'Pair 5: Eggs, Meat and Fish → Baby Care',
+            'source_file': 'domain_pair5_source_RFM.csv',
+            'target_file': 'domain_pair5_target_RFM.csv',
+            'expected': 'LOW transferability (New Model)'
+        },
+        {
+            'name': 'Pair 6: Baby Care → Bakery, Cakes and Dairy',
+            'source_file': 'domain_pair6_source_RFM.csv',
+            'target_file': 'domain_pair6_target_RFM.csv',
+            'expected': 'LOW transferability (New Model)'
+        },
+        {
+            'name': 'Pair 7: Beverages → Gourmet & World Food',
+            'source_file': 'domain_pair7_source_RFM.csv',
+            'target_file': 'domain_pair7_target_RFM.csv',
+            'expected': 'HIGH transferability (No Finetune)'
         }
     ]
+
     
     # Calculate transferability for each pair
     results = []
