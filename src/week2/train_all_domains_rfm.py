@@ -11,25 +11,51 @@ import os
 # Configuration
 DOMAINS = {
     'domain_pair1': {
-        'name': 'Cleaning & Household',
+        'name': 'Cleaning & Household → Foodgrains (No Finetune)',
         'rfm_file': 'domain_pair1_source_RFM.csv',
-        'description': 'High transferability to Foodgrains, Oil & Masala'
+        'description': 'Cross-category transfer'
     },
     'domain_pair2': {
-        'name': 'Snacks & Branded Foods',
+        'name': 'Snacks → Garden, Kitchen (Partial)',
         'rfm_file': 'domain_pair2_source_RFM.csv',
-        'description': 'Moderate transferability to Fruits & Vegetables'
+        'description': 'Partial transferability'
     },
     'domain_pair3': {
-        'name': 'Premium Segment',
+        'name': 'Premium → Budget (On the whole dataset) (Partial)',
         'rfm_file': 'domain_pair3_source_RFM.csv',
         'description': 'Low transferability - Price segments'
     },
     'domain_pair4': {
-        'name': 'Popular Brands',
+        'name': 'Premimum -> Mass-Market Beauty Products (Partial)',
         'rfm_file': 'domain_pair4_source_RFM.csv',
-        'description': 'Low-Moderate transferability - Brand popularity'
-    }
+        'description': 'Partial transferability - Beauty products'
+    },
+    'domain_pair5': {
+        'name': 'Eggs, Meat and Fish -> Baby Care (New Model)',
+        'rfm_file': 'domain_pair5_source_RFM.csv',
+        'description': 'New model required'
+    },
+    'domain_pair6': {
+        'name': 'Baby Care  -> Bakery, Cakes and Dairy (New Model)',
+        'rfm_file': 'domain_pair6_source_RFM.csv',
+        'description': 'New model required'
+    },
+    'domain_pair7': {
+        'name': 'Beverages -> Gourmet & World Food (No finetune)',
+        'rfm_file': 'domain_pair7_source_RFM.csv',
+        'description': 'Direct transfer without finetuning'
+    },
+}
+
+# Transferability mapping based on domain characteristics
+TRANSFERABILITY_MAP = {
+    'domain_pair1': 'No Finetune',
+    'domain_pair2': 'Partial',
+    'domain_pair3': 'Partial (Low)',
+    'domain_pair4': 'Partial',
+    'domain_pair5': 'New Model',
+    'domain_pair6': 'New Model',
+    'domain_pair7': 'No Finetune'
 }
 
 K_RANGE = [3, 4, 5, 6, 7, 8]  # Range of k values to test
@@ -200,19 +226,13 @@ def create_comparison_report(all_results):
     print(f"   Most balanced: {df_summary.loc[df_summary['balance_ratio'].idxmin(), 'domain_name']} (ratio: {df_summary['balance_ratio'].min():.2f})")
     print(f"   Least balanced: {df_summary.loc[df_summary['balance_ratio'].idxmax(), 'domain_name']} (ratio: {df_summary['balance_ratio'].max():.2f})")
     
-    # Transferability insights
-    print("\n5️⃣ TRANSFERABILITY INSIGHTS:")
-    transferability_map = {
-        'domain_pair1': 'HIGH (0.903)',
-        'domain_pair2': 'MODERATE (0.548)',
-        'domain_pair3': 'LOW (0.715)',
-        'domain_pair4': 'LOW-MODERATE (0.874)'
-    }
+    # Transfer learning analysis
+    print("\n5️⃣ TRANSFER LEARNING POTENTIAL:")
     
     for _, row in df_summary.iterrows():
         domain_id = row['domain_id']
         silhouette = row['silhouette_score']
-        transfer_score = transferability_map.get(domain_id, 'Unknown')
+        transfer_score = TRANSFERABILITY_MAP.get(domain_id, 'Unknown')
         
         print(f"\n   {row['domain_name']}:")
         print(f"      Transferability: {transfer_score}")
