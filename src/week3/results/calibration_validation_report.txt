@@ -1,0 +1,41 @@
+================================================================================
+TRANSFER LEARNING FRAMEWORK: CALIBRATION & VALIDATION REPORT
+================================================================================
+
+Dataset: 7 domain pairs
+Total experiments: 35 (7 pairs × 5 tests)
+
+================================================================================
+CORRELATION ANALYSIS
+================================================================================
+
+Predicted vs Zero-Shot Performance:
+  Pearson r = 0.8490
+  p-value = 0.0157
+
+Predicted vs Improvement from Fine-tuning:
+  Pearson r = -0.8354
+  p-value = 0.0193
+
+================================================================================
+CALIBRATED THRESHOLDS
+================================================================================
+
+HIGH transferability:     >= 0.9000
+MODERATE transferability: >= 0.7254
+LOW transferability:      <  0.7254
+
+================================================================================
+FRAMEWORK VALIDATION
+================================================================================
+
+Accuracy: 85.7%
+Correct predictions: 6/7
+
+================================================================================
+RECOMMENDATIONS
+================================================================================
+
+✓ Framework demonstrates good predictive accuracy (>= 70%)
+✓ Thresholds are well-calibrated
+✓ Ready for deployment

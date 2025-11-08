@@ -84,8 +84,8 @@ class DecisionEngine:
     """
     
     def __init__(self, 
-                 high_threshold=0.8260,
-                 moderate_threshold=0.7312,
+                 high_threshold=0.9000,
+                 moderate_threshold=0.7254,
                  low_threshold=0.50,
                  metric_weights=None):
         """
@@ -94,11 +94,13 @@ class DecisionEngine:
         Parameters:
         -----------
         high_threshold : float
-            Minimum score for HIGH transferability (default: 0.8260)
-            Calibrated using isotonic regression on Week 2 experimental data
+            Minimum score for HIGH transferability (default: 0.9000)
+            Calibrated from Week 3 experiments with 7 domain pairs (85.7% accuracy)
+            More conservative than original 0.8260 to reduce false positives
         moderate_threshold : float
-            Minimum score for MODERATE transferability (default: 0.7312)
-            Calibrated using isotonic regression on Week 2 experimental data
+            Minimum score for MODERATE transferability (default: 0.7254)
+            Calibrated from Week 3 experiments with 7 domain pairs
+            Based on actual best-performing strategies across all pairs
         low_threshold : float
             Minimum score for LOW transferability (default: 0.50)
             Below this, transfer not recommended

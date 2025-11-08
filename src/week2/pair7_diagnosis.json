@@ -1,0 +1,11 @@
+{
+  "pair": 7,
+  "transferability_score": 0.895,
+  "expected": "MODERATE-HIGH",
+  "zero_shot_actual": 0.5147727966275324,
+  "zero_shot_scaled": 0.3486957998248862,
+  "root_causes": [],
+  "issues_missed": [
+    "Monetary has different importance in two domains"
+  ]
+}
