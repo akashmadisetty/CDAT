@@ -226,7 +226,7 @@ def load_transaction_files(source_path, target_path):
 # ANALYSIS & RECOMMENDATION
 # ============================================================================
 
-def analyze_transferability(source_data, target_data, pair_info):
+def analyze_transferability(source_data, target_data, pair_info, use_learned_weights=True):
     """Analyze transferability and generate recommendations"""
     print_header("Transfer Learning Analysis")
     
@@ -245,11 +245,15 @@ def analyze_transferability(source_data, target_data, pair_info):
     framework = TransferLearningFramework(
         source_model=source_model,
         source_data=source_data,
-        target_data=target_data
+        target_data=target_data,
+        use_learned_weights=use_learned_weights
     )
     
     # Calculate transferability
-    print_info("Calculating transferability metrics...")
+    if use_learned_weights:
+        print_info("Calculating transferability metrics (using learned weights)...")
+    else:
+        print_info("Calculating transferability metrics (using default weights)...")
     framework.calculate_transferability()
     
     # Always use the freshly calculated score
@@ -352,6 +356,10 @@ Examples:
                        help='Skip domain comparison table')
     parser.add_argument('--save-report', type=str,
                        help='Save detailed report to file')
+    parser.add_argument('--use-learned-weights', action='store_true', default=True,
+                       help='Use learned composite weights from calibration (default: True)')
+    parser.add_argument('--use-default-weights', dest='use_learned_weights', action='store_false',
+                       help='Use default research-backed weights instead of learned weights')
     
     args = parser.parse_args()
     
@@ -410,7 +418,8 @@ Examples:
         display_comparison_table(source_data, target_data)
     
     # Analyze transferability
-    recommendation = analyze_transferability(source_data, target_data, pair_info)
+    recommendation = analyze_transferability(source_data, target_data, pair_info, 
+                                            use_learned_weights=args.use_learned_weights)
     
     # Save report if requested
     if args.save_report:

@@ -18,6 +18,24 @@ Predicted vs Improvement from Fine-tuning:
   p-value = 0.0193
 
 ================================================================================
+LEARNED COMPOSITE WEIGHTS
+================================================================================
+
+Method: Ridge regression with LOO CV
+Pairs used: 7
+Correlation: r = 0.6720, p = 0.0982
+LOO R²: nan
+
+Learned Weights:
+  mmd                      : 0.0000
+  js_divergence            : 0.2600
+  correlation_stability    : 0.2094
+  ks_statistic             : 0.2710
+  wasserstein_distance     : 0.2596
+
+Weights saved to: learned_weights.json
+
+================================================================================
 CALIBRATED THRESHOLDS
 ================================================================================
 

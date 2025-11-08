@@ -21,12 +21,17 @@ import seaborn as sns
 from scipy.stats import pearsonr, spearmanr
 from scipy.optimize import minimize
 from sklearn.metrics import mean_squared_error, r2_score
+from sklearn.linear_model import RidgeCV
+from sklearn.model_selection import LeaveOneOut
 import os
 import sys
+import json
+from pathlib import Path
 
 # Import framework components
 from experiment_config import DOMAIN_PAIRS, PATHS
 from decision_engine import DecisionEngine, TransferabilityLevel, TransferStrategy
+from metrics import TransferabilityMetrics
 
 sns.set_style("whitegrid")
 
@@ -43,6 +48,8 @@ class FrameworkCalibrator:
         self.calibration_data = None
         self.optimal_thresholds = None
         self.optimal_weights = None
+        self.learned_weights = None
+        self.metrics_calculator = TransferabilityMetrics()
         
     def load_results(self):
         """Load experimental results"""
@@ -254,7 +261,7 @@ class FrameworkCalibrator:
         output_path = f"{PATHS['visualizations_dir']}/calibration_correlation.png"
         plt.savefig(output_path, dpi=300, bbox_inches='tight')
         print(f"\n✓ Saved correlation plot: {output_path}")
-        plt.show()
+        plt.close()  # Close instead of show to avoid GUI issues
     
     def calibrate_thresholds(self):
         """Determine optimal thresholds based on actual performance"""
@@ -317,6 +324,177 @@ class FrameworkCalibrator:
         }
         
         return self.optimal_thresholds
+    
+    def learn_composite_weights(self, min_pairs=5):
+        """
+        Learn optimal weights for composite transferability score
+        
+        Uses Ridge regression to learn weights that best predict zero-shot performance
+        from individual transferability metrics (MMD, JS, correlation, KS, Wasserstein).
+        
+        Parameters:
+        -----------
+        min_pairs : int
+            Minimum number of domain pairs required for learning (default: 5)
+            
+        Returns:
+        --------
+        dict : Learned weights and metadata
+        """
+        print("\n" + "="*80)
+        print("LEARNING COMPOSITE SCORE WEIGHTS")
+        print("="*80)
+        
+        n_pairs = len(self.calibration_data)
+        print(f"\nNumber of domain pairs available: {n_pairs}")
+        
+        if n_pairs < min_pairs:
+            print(f"⚠️  WARNING: Only {n_pairs} pairs available (minimum {min_pairs} recommended)")
+            print("   Using default weights from metrics.py instead of learning")
+            self.learned_weights = None
+            return None
+        
+        # Load RFM data and compute transferability metrics for each pair
+        print("\nComputing transferability metrics from RFM data...")
+        
+        metric_names = ['mmd', 'js_divergence', 'correlation_stability', 'ks_statistic', 'wasserstein_distance']
+        metrics_matrix = []
+        zero_shot_scores = []
+        valid_pairs = []
+        
+        for _, row in self.calibration_data.iterrows():
+            pair_num = int(row['pair_number'])
+            src_path = Path(f"{PATHS['data_dir']}/domain_pair{pair_num}_source_RFM.csv")
+            tgt_path = Path(f"{PATHS['data_dir']}/domain_pair{pair_num}_target_RFM.csv")
+            
+            if not (src_path.exists() and tgt_path.exists()):
+                print(f"  ⚠️  Skipping Pair {pair_num}: RFM files not found")
+                continue
+            
+            try:
+                src_data = pd.read_csv(src_path)
+                tgt_data = pd.read_csv(tgt_path)
+                
+                # Ensure RFM columns exist
+                rfm_cols = ['Recency', 'Frequency', 'Monetary']
+                if not all(c in src_data.columns and c in tgt_data.columns for c in rfm_cols):
+                    print(f"  ⚠️  Skipping Pair {pair_num}: Missing RFM columns")
+                    continue
+                
+                # Calculate metrics
+                metrics = self.metrics_calculator.calculate_all_metrics(
+                    src_data[rfm_cols], 
+                    tgt_data[rfm_cols]
+                )
+                
+                metrics_matrix.append([metrics[k] for k in metric_names])
+                zero_shot_scores.append(row['zero_shot_performance'])
+                valid_pairs.append(pair_num)
+                print(f"  ✓ Pair {pair_num}: Metrics computed")
+                
+            except Exception as e:
+                print(f"  ⚠️  Error computing metrics for Pair {pair_num}: {e}")
+                continue
+        
+        if len(valid_pairs) < min_pairs:
+            print(f"\n⚠️  ERROR: Only {len(valid_pairs)} valid pairs (need >= {min_pairs})")
+            print("   Cannot learn weights. Using defaults.")
+            self.learned_weights = None
+            return None
+        
+        # Convert to numpy arrays
+        X = np.array(metrics_matrix)
+        y = np.array(zero_shot_scores)
+        
+        print(f"\n✓ Successfully loaded {len(valid_pairs)} pairs for weight learning")
+        print(f"  Valid pairs: {valid_pairs}")
+        
+        # Transform metrics to similarity scores (as in compute_composite_score)
+        mmd_sim = 1 - np.minimum(X[:,0] / 2.0, 1.0)
+        js_sim = 1 - X[:,1]
+        corr_sim = X[:,2]
+        ks_sim = 1 - X[:,3]
+        w_sim = 1 - np.minimum(X[:,4] / 1.5, 1.0)
+        
+        S = np.vstack([mmd_sim, js_sim, corr_sim, ks_sim, w_sim]).T
+        
+        # Fit Ridge regression with Leave-One-Out CV
+        print("\nTraining Ridge regression model...")
+        print("  - Target: Zero-shot silhouette score")
+        print("  - Features: 5 similarity metrics (MMD, JS, Corr, KS, Wasserstein)")
+        print("  - Cross-validation: Leave-One-Out (LOO)")
+        
+        alphas = np.logspace(-3, 3, 50)
+        model = RidgeCV(alphas=alphas, cv=LeaveOneOut())
+        model.fit(S, y)
+        
+        # Get coefficients
+        coefs = model.coef_
+        intercept = model.intercept_
+        
+        # Normalize to positive weights summing to 1 (for interpretability)
+        coefs_pos = np.maximum(coefs, 0)
+        if coefs_pos.sum() > 0:
+            weights_normalized = coefs_pos / coefs_pos.sum()
+        else:
+            # All negative — use absolute values
+            weights_normalized = np.abs(coefs) / np.abs(coefs).sum()
+        
+        # Compute predictions and correlation
+        y_pred = model.predict(S)
+        r_corr, p_corr = pearsonr(y_pred, y)
+        
+        # Compute LOO R²
+        from sklearn.model_selection import cross_val_score
+        loo_scores = cross_val_score(model, S, y, cv=LeaveOneOut(), scoring='r2')
+        loo_r2_mean = loo_scores.mean()
+        
+        print(f"\n✓ Weight learning complete!")
+        print(f"\nModel Performance:")
+        print(f"  - Correlation (predicted vs zero-shot): r = {r_corr:.4f}, p = {p_corr:.4f}")
+        print(f"  - LOO Cross-Validation R²: {loo_r2_mean:.4f}")
+        print(f"  - Optimal Ridge alpha: {model.alpha_:.4f}")
+        
+        print(f"\nLearned Weights (normalized):")
+        weights_dict = {}
+        for i, name in enumerate(metric_names):
+            weight_val = float(weights_normalized[i])
+            weights_dict[name] = weight_val
+            print(f"  {name:25s}: {weight_val:.4f}")
+        
+        # Save learned weights
+        self.learned_weights = {
+            'weights': weights_dict,
+            'metadata': {
+                'n_pairs': len(valid_pairs),
+                'valid_pairs': valid_pairs,
+                'correlation_r': float(r_corr),
+                'correlation_p': float(p_corr),
+                'loo_r2': float(loo_r2_mean),
+                'ridge_alpha': float(model.alpha_),
+                'ridge_intercept': float(intercept),
+                'ridge_coefs_raw': coefs.tolist(),
+                'method': 'Ridge regression with LOO CV',
+                'target': 'zero_shot_silhouette_score',
+                'features': metric_names,
+                'date_learned': pd.Timestamp.now().isoformat()
+            }
+        }
+        
+        # Save to JSON
+        weights_path = Path(PATHS['results_dir']) / 'learned_weights.json'
+        with open(weights_path, 'w') as f:
+            json.dump(self.learned_weights, f, indent=2)
+        
+        print(f"\n✓ Saved learned weights to: {weights_path}")
+        
+        # Also save a copy to src/week3 for easy import
+        week3_weights_path = Path(__file__).parent / 'learned_weights.json'
+        with open(week3_weights_path, 'w') as f:
+            json.dump(self.learned_weights, f, indent=2)
+        print(f"✓ Saved copy to: {week3_weights_path}")
+        
+        return self.learned_weights
     
     def validate_framework(self):
         """Validate framework predictions against actual results"""
@@ -432,6 +610,10 @@ class FrameworkCalibrator:
         self.prepare_calibration_data()
         correlation_results = self.analyze_correlation()
         threshold_results = self.calibrate_thresholds()
+        
+        # Learn optimal weights for composite score
+        weight_results = self.learn_composite_weights(min_pairs=5)
+        
         validation_results = self.validate_framework()
         
         if save:
@@ -454,6 +636,23 @@ class FrameworkCalibrator:
                 f.write(f"Predicted vs Improvement from Fine-tuning:\n")
                 f.write(f"  Pearson r = {correlation_results['correlation_improvement']:.4f}\n")
                 f.write(f"  p-value = {correlation_results['p_value_improvement']:.4f}\n\n")
+                
+                f.write("="*80 + "\n")
+                f.write("LEARNED COMPOSITE WEIGHTS\n")
+                f.write("="*80 + "\n\n")
+                if weight_results:
+                    f.write(f"Method: {weight_results['metadata']['method']}\n")
+                    f.write(f"Pairs used: {weight_results['metadata']['n_pairs']}\n")
+                    f.write(f"Correlation: r = {weight_results['metadata']['correlation_r']:.4f}, ")
+                    f.write(f"p = {weight_results['metadata']['correlation_p']:.4f}\n")
+                    f.write(f"LOO R²: {weight_results['metadata']['loo_r2']:.4f}\n\n")
+                    f.write("Learned Weights:\n")
+                    for metric, weight in weight_results['weights'].items():
+                        f.write(f"  {metric:25s}: {weight:.4f}\n")
+                    f.write(f"\nWeights saved to: learned_weights.json\n\n")
+                else:
+                    f.write("Weight learning skipped (insufficient data).\n")
+                    f.write("Using default weights from metrics.py\n\n")
                 
                 f.write("="*80 + "\n")
                 f.write("CALIBRATED THRESHOLDS\n")
