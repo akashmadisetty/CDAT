@@ -1,0 +1,38 @@
+Country,n_customers,n_orders,total_revenue
+United Kingdom,3920,16646,7308391.5540000005
+Germany,94,457,228867.14
+France,87,389,209024.05
+Spain,30,90,61577.11
+Belgium,25,98,41196.34
+Switzerland,21,51,56443.95
+Portugal,19,57,33439.89
+Italy,14,38,17483.24
+Finland,12,41,22546.08
+Austria,11,17,10198.68
+Norway,10,36,36165.44
+Netherlands,9,94,285446.34
+Australia,9,57,138521.31
+Denmark,9,18,18955.34
+Channel Islands,9,26,20450.44
+Cyprus,8,16,13590.38
+Sweden,8,36,38378.33
+Japan,8,19,37416.369999999995
+Poland,6,19,7334.65
+USA,4,5,3580.39
+Canada,4,6,3666.38
+Unspecified,4,8,2667.07
+Greece,4,5,4760.52
+EIRE,3,260,265545.9
+Israel,3,5,7221.69
+Malta,2,5,2725.59
+United Arab Emirates,2,3,1902.28
+Bahrain,2,2,548.4
+Czech Republic,1,2,826.74
+Lithuania,1,4,1661.06
+Lebanon,1,1,1693.88
+RSA,1,1,1002.3100000000001
+Saudi Arabia,1,1,145.92
+Singapore,1,7,21279.29
+Iceland,1,7,4310.0
+Brazil,1,1,1143.6
+European Community,1,4,1300.25
