@@ -1,0 +1,4 @@
+Experiment,Source_N,Target_N,Recency_MeanDiff_%,Monetary_MeanDiff_%,Expected_Transferability
+Exp 5: UK→France,3920,87,2.995031314512785,60.552930101646496,MODERATE-HIGH (similar distributions)
+Exp 6: UK→Germany,3920,94,16.299339254301902,59.47940479729865,MODERATE-HIGH (similar distributions)
+Exp 7: High→Medium,980,1960,164.9625708312979,83.02113976646301,LOW (large domain shift)

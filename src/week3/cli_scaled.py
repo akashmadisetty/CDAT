@@ -122,15 +122,15 @@ def load_rfm_files(source_path, target_path):
         target_data = pd.read_csv(target_path)
         
         # Validate RFM columns
-        required_cols = ['Recency', 'Frequency', 'Monetary']
+        required_cols = ['Recency_scaled', 'Frequency_scaled', 'Monetary_scaled']
         
         for col in required_cols:
             if col not in source_data.columns:
                 print_error(f"Source file missing column: {col}")
-                return None, None
+                return None, None, None
             if col not in target_data.columns:
                 print_error(f"Target file missing column: {col}")
-                return None, None
+                return None, None, None
         
         print_success(f"Loaded source RFM: {len(source_data)} customers")
         print_success(f"Loaded target RFM: {len(target_data)} customers")
@@ -146,7 +146,7 @@ def load_rfm_files(source_path, target_path):
     
     except Exception as e:
         print_error(f"Error loading RFM files: {e}")
-        return None, None
+        return None, None, None
 
 def calculate_rfm_from_transactions(transactions_df, customer_col='customer_id', 
                                     date_col='InvoiceDate', amount_col='amount'):
@@ -162,17 +162,17 @@ def calculate_rfm_from_transactions(transactions_df, customer_col='customer_id',
     
     # Calculate RFM
     rfm = transactions_df.groupby(customer_col).agg({
-        date_col: lambda x: (reference_date - x.max()).days,  # Recency
-        customer_col: 'count',  # Frequency
-        amount_col: 'sum'  # Monetary
+        date_col: lambda x: (reference_date - x.max()).days,  # Recency_scaled_scaled
+        customer_col: 'count',  # Frequency_scaled
+        amount_col: 'sum'  # Monetary_scaled
     }).reset_index()
     
-    rfm.columns = ['customer_id', 'Recency', 'Frequency', 'Monetary']
+    rfm.columns = ['customer_id', 'Recency_scaled_scaled', 'Frequency_scaled', 'Monetary_scaled']
     
     print_success(f"Calculated RFM for {len(rfm)} customers")
-    print_info(f"  Recency range: [{rfm['Recency'].min():.0f}, {rfm['Recency'].max():.0f}] days")
-    print_info(f"  Frequency range: [{rfm['Frequency'].min():.0f}, {rfm['Frequency'].max():.0f}] purchases")
-    print_info(f"  Monetary range: [₹{rfm['Monetary'].min():.2f}, ₹{rfm['Monetary'].max():.2f}]")
+    print_info(f"  Recency_scaled_scaled range: [{rfm['Recency_scaled_scaled'].min():.0f}, {rfm['Recency_scaled_scaled'].max():.0f}] days")
+    print_info(f"  Frequency_scaled range: [{rfm['Frequency_scaled'].min():.0f}, {rfm['Frequency_scaled'].max():.0f}] purchases")
+    print_info(f"  Monetary_scaled range: [₹{rfm['Monetary_scaled'].min():.2f}, ₹{rfm['Monetary_scaled'].max():.2f}]")
     
     return rfm
 
@@ -202,7 +202,7 @@ def load_transaction_files(source_path, target_path):
             print_error("Could not auto-detect transaction columns.")
             print_info("Required columns: customer_id, date, amount (or similar)")
             print_info(f"Available columns: {list(source_trans.columns)}")
-            return None, None
+            return None, None, None
         
         print_info(f"Using columns: customer={customer_col}, date={date_col}, amount={amount_col}")
         
@@ -220,7 +220,7 @@ def load_transaction_files(source_path, target_path):
     
     except Exception as e:
         print_error(f"Error loading transaction files: {e}")
-        return None, None
+        return None, None, None
 
 # ============================================================================
 # ANALYSIS & RECOMMENDATION
@@ -301,25 +301,25 @@ def display_comparison_table(source_data, target_data):
     
     # Calculate statistics
     stats = pd.DataFrame({
-        'Metric': ['Customers', 'Avg Recency (days)', 'Avg Frequency', 'Avg Monetary (₹)', 
-                   'Median Recency', 'Median Frequency', 'Median Monetary'],
+        'Metric': ['Customers', 'Avg Recency_scaled (days)', 'Avg Frequency_scaled', 'Avg Monetary_scaled (₹)', 
+                   'Median Recency_scaled', 'Median Frequency_scaled', 'Median Monetary_scaled'],
         'Source Domain': [
             len(source_data),
-            source_data['Recency'].mean(),
-            source_data['Frequency'].mean(),
-            source_data['Monetary'].mean(),
-            source_data['Recency'].median(),
-            source_data['Frequency'].median(),
-            source_data['Monetary'].median()
+            source_data['Recency_scaled'].mean(),
+            source_data['Frequency_scaled'].mean(),
+            source_data['Monetary_scaled'].mean(),
+            source_data['Recency_scaled'].median(),
+            source_data['Frequency_scaled'].median(),
+            source_data['Monetary_scaled'].median()
         ],
         'Target Domain': [
             len(target_data),
-            target_data['Recency'].mean(),
-            target_data['Frequency'].mean(),
-            target_data['Monetary'].mean(),
-            target_data['Recency'].median(),
-            target_data['Frequency'].median(),
-            target_data['Monetary'].median()
+            target_data['Recency_scaled'].mean(),
+            target_data['Frequency_scaled'].mean(),
+            target_data['Monetary_scaled'].mean(),
+            target_data['Recency_scaled'].median(),
+            target_data['Frequency_scaled'].median(),
+            target_data['Monetary_scaled'].median()
         ]
     })
     
