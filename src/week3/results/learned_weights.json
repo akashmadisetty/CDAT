@@ -1,0 +1,43 @@
+{
+  "weights": {
+    "mmd": 0.0,
+    "js_divergence": 0.2599706330233693,
+    "correlation_stability": 0.20939601669190241,
+    "ks_statistic": 0.27102984787920364,
+    "wasserstein_distance": 0.2596035024055246
+  },
+  "metadata": {
+    "n_pairs": 7,
+    "valid_pairs": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "correlation_r": 0.6719868322635131,
+    "correlation_p": 0.09823536685394012,
+    "loo_r2": NaN,
+    "ridge_alpha": 0.001,
+    "ridge_intercept": 0.3392477379110176,
+    "ridge_coefs_raw": [
+      -0.9657568842428327,
+      0.2581637214955264,
+      0.20794062124186724,
+      0.26914606988925505,
+      0.25779914259876613
+    ],
+    "method": "Ridge regression with LOO CV",
+    "target": "zero_shot_silhouette_score",
+    "features": [
+      "mmd",
+      "js_divergence",
+      "correlation_stability",
+      "ks_statistic",
+      "wasserstein_distance"
+    ],
+    "date_learned": "2025-11-08T23:24:54.531352"
+  }
+}

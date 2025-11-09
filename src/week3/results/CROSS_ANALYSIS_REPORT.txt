@@ -1,0 +1,41 @@
+================================================================================
+TRANSFER LEARNING FRAMEWORK: CROSS-ANALYSIS REPORT
+================================================================================
+
+RESEARCH QUESTIONS:
+1. Does predicted transferability correlate with actual performance?
+2. When is fine-tuning most beneficial?
+3. What's the optimal amount of target data?
+4. What patterns emerge across transferability levels?
+
+================================================================================
+KEY FINDINGS:
+================================================================================
+
+Q1: Transferability Correlation
+   Pearson r = 0.8490 (p=0.0157)
+   Average rank difference = 0.86
+
+Q2: Fine-tuning Benefits
+   [See detailed breakdown above]
+
+Q3: Optimal Data Amount
+ pair_number      category  optimal_percentage  best_score  zero_shot_score
+           1          HIGH                  20    0.593720         0.369407
+           2           LOW                  10    0.594045         0.192644
+           3      MODERATE                  50    0.548397         0.293276
+           4 MODERATE-HIGH                  50    0.538682         0.433848
+           5           LOW                  10    0.592442         0.309383
+           6           LOW                  10    0.607950         0.303796
+           7 MODERATE-HIGH                  10    0.585711         0.348696
+
+Q4: Transferability Patterns
+ pair_number      category  transferability  zero_shot  best_finetune  from_scratch  total_training_time  transfer_benefit  finetune_benefit
+           1          HIGH           0.9028   0.369407       0.593720      0.588510             0.486698         -0.219103          0.224313
+           2           LOW           0.7254   0.192644       0.594045      0.591092             0.366705         -0.398447          0.401401
+           3      MODERATE           0.8159   0.293276       0.548397      0.539158             0.464665         -0.245881          0.255120
+           4 MODERATE-HIGH           0.8958   0.433848       0.538682      0.542116             0.433352         -0.108268          0.104835
+           5           LOW           0.8036   0.309383       0.592442      0.574304             0.339762         -0.264921          0.283059
+           6           LOW           0.7414   0.303796       0.607950      0.608881             0.417552         -0.305085          0.304154
+           7 MODERATE-HIGH           0.8951   0.348696       0.585711      0.591072             0.448395         -0.242377          0.237015
+

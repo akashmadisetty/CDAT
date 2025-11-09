@@ -1,0 +1,8 @@
+pair_number,pair_name,transferability_score,expected_category,zero_shot_performance,best_finetune_performance,from_scratch_performance,improvement_from_finetune,actual_best_strategy,optimal_data_percentage,predicted_strategy
+1,Pair 1: Cleaning & Household → Foodgrains,0.9028,HIGH,0.3694074777545322,0.5937201449722191,0.5885100155031394,0.22431266721768695,fine_tune_light,20,transfer_as_is
+2,"Pair 2: Snacks → Kitchen, Garden & Pets",0.7254,LOW,0.1926442173534424,0.594045441709012,0.5910915095504706,0.4014012243555696,fine_tune_light,10,fine_tune_heavy
+3,Pair 3: Premium → Budget (Whole Dataset),0.8159,MODERATE,0.2932764511298931,0.5483965337200872,0.5391575740595581,0.25512008259019414,fine_tune_heavy,50,fine_tune_light
+4,Pair 4: Premium → Mass-Market Beauty,0.8958,MODERATE-HIGH,0.4338477231669973,0.5386823329874514,0.5421160891298897,0.10483460982045406,fine_tune_heavy,50,fine_tune_light
+5,"Pair 5: Eggs, Meat & Fish → Baby Care",0.8036,LOW,0.3093828583496931,0.5924415866484616,0.5743035951273828,0.2830587282987685,fine_tune_light,10,fine_tune_light
+6,"Pair 6: Baby Care → Bakery, Cakes & Dairy",0.7414,LOW,0.3037956343093312,0.6079495585368871,0.608880668924661,0.30415392422755594,fine_tune_light,10,fine_tune_heavy
+7,Pair 7: Beverages → Gourmet & World Food,0.8951,MODERATE-HIGH,0.3486957998248862,0.5857109883234871,0.5910723526861678,0.23701518849860093,fine_tune_light,10,fine_tune_light

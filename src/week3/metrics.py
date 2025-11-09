@@ -30,6 +30,9 @@ from scipy.stats import ks_2samp, wasserstein_distance
 from sklearn.preprocessing import StandardScaler
 from sklearn.metrics.pairwise import rbf_kernel
 import warnings
+import json
+from pathlib import Path
+
 warnings.filterwarnings('ignore')
 
 
@@ -314,7 +317,7 @@ class TransferabilityMetrics:
         
         return metrics
     
-    def compute_composite_score(self, metrics, weights=None):
+    def compute_composite_score(self, metrics, weights=None, use_learned_weights=True):
         """
         Compute a single composite transferability score
         
@@ -326,7 +329,10 @@ class TransferabilityMetrics:
         metrics : dict
             Dictionary of individual metric values
         weights : dict, optional
-            Custom weights for each metric. If None, uses research-backed defaults.
+            Custom weights for each metric. If None, uses learned or default weights.
+        use_learned_weights : bool
+            If True (default), attempts to load learned weights from calibration.
+            If False or learned weights unavailable, uses research-backed defaults.
             
         Returns:
         --------
@@ -334,8 +340,24 @@ class TransferabilityMetrics:
             Composite transferability score in range [0, 1]
             Higher = better transferability
         """
-        # Default weights based on calibration results
-        # These are data-driven weights optimized on Week 2 experimental data
+        # Try to load learned weights if requested
+        if weights is None and use_learned_weights:
+            learned_path = Path(__file__).parent / 'learned_weights.json'
+            if learned_path.exists():
+                try:
+                    with open(learned_path, 'r') as f:
+                        learned_data = json.load(f)
+                        weights = learned_data.get('weights', None)
+                        if weights:
+                            # Optional: print message (disabled for cleaner output)
+                            # print("Using learned weights from calibration")
+                            pass
+                except Exception as e:
+                    # Silently fall back to defaults if loading fails
+                    weights = None
+        
+        # Default weights based on calibration results or research-backed estimates
+        # These are data-driven weights optimized on experimental data
         if weights is None:
             weights = {
                 'mmd': 0.30,              # Primary metric - captures overall distribution difference

@@ -58,7 +58,8 @@ class TransferLearningFramework:
                  source_data=None,
                  target_data=None,
                  model_path: Optional[str] = None,
-                 rfm_features: list = None):
+                 rfm_features: list = None,
+                 use_learned_weights: bool = True):
         """
         Initialize the Transfer Learning Framework
         
@@ -74,10 +75,13 @@ class TransferLearningFramework:
             Path to load pre-trained model
         rfm_features : list, optional
             List of RFM feature names (default: ['Recency', 'Frequency', 'Monetary'])
+        use_learned_weights : bool, optional
+            Use learned weights from calibration if available (default: True)
         """
         self.source_model = source_model
         self.source_data = source_data
         self.target_data = target_data
+        self.use_learned_weights = use_learned_weights
         
         # Default RFM features
         self.rfm_features = rfm_features or ['Recency', 'Frequency', 'Monetary']
@@ -193,7 +197,8 @@ class TransferLearningFramework:
         
         # Compute composite score
         self.composite_score = self.metrics_calculator.compute_composite_score(
-            self.transferability_metrics
+            self.transferability_metrics,
+            use_learned_weights=self.use_learned_weights
         )
         
         if verbose:
