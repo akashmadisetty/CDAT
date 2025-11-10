@@ -240,6 +240,99 @@ class TransferLearningFramework:
         print(f"🎯 COMPOSITE TRANSFERABILITY SCORE: {self.composite_score:.4f}")
         print(f"{'='*70}\n")
     
+    def calculate_confidence_interval(self, n_bootstrap=500, confidence_level=0.95, verbose=True):
+        """
+        Calculate confidence interval for transferability score using bootstrap resampling.
+        
+        Parameters:
+        -----------
+        n_bootstrap : int
+            Number of bootstrap samples (default: 5000)
+        confidence_level : float
+            Confidence level (default: 0.95 for 95% CI)
+        verbose : bool
+            Print progress (default: True)
+        
+        Returns:
+        --------
+        dict : {
+            'score': mean score,
+            'ci_lower': lower bound,
+            'ci_upper': upper bound,
+            'std_error': standard error,
+            'sample_scores': all bootstrap scores
+        }
+        """
+        if self.source_data is None or self.target_data is None:
+            raise ValueError("Load source and target data first using load_data()")
+        
+        if verbose:
+            print(f"\n🔄 Calculating {confidence_level*100:.0f}% confidence interval...")
+            print(f"   Bootstrap samples: {n_bootstrap}")
+        
+        bootstrap_scores = []
+        
+        for i in range(n_bootstrap):
+            if verbose and (i+1) % 200 == 0:
+                print(f"   Progress: {i+1}/{n_bootstrap}")
+            
+            # Resample with replacement
+            source_sample = self.source_data.sample(n=len(self.source_data), replace=True)
+            target_sample = self.target_data.sample(n=len(self.target_data), replace=True)
+            
+            # Create temporary framework instance
+            temp_framework = TransferLearningFramework(
+                source_model=self.source_model,
+                source_data=source_sample,
+                target_data=target_sample,
+                use_learned_weights=self.use_learned_weights
+            )
+            
+            # Calculate transferability
+            temp_framework.calculate_transferability(verbose=False)
+            bootstrap_scores.append(temp_framework.composite_score)
+        
+        # Calculate statistics
+        bootstrap_scores = np.array(bootstrap_scores)
+        mean_score = np.mean(bootstrap_scores)
+        std_error = np.std(bootstrap_scores)
+        
+        # Calculate confidence interval
+        alpha = 1 - confidence_level
+        ci_lower = np.percentile(bootstrap_scores, alpha/2 * 100)
+        ci_upper = np.percentile(bootstrap_scores, (1 - alpha/2) * 100)
+        
+        self.confidence_interval = {
+            'score': mean_score,
+            'ci_lower': ci_lower,
+            'ci_upper': ci_upper,
+            'std_error': std_error,
+            'confidence_level': confidence_level,
+            'n_bootstrap': n_bootstrap,
+            'sample_scores': bootstrap_scores
+        }
+        
+        if verbose:
+            print(f"\n📊 Confidence Interval Results:")
+            print(f"   Mean Score: {mean_score:.4f}")
+            print(f"   {confidence_level*100:.0f}% CI: [{ci_lower:.4f}, {ci_upper:.4f}]")
+            print(f"   Standard Error: {std_error:.4f}")
+            print(f"   Original Score: {self.composite_score:.4f}")
+        
+        return self.confidence_interval
+    
+    def get_confidence_interval_summary(self):
+        """Get formatted confidence interval summary"""
+        if not hasattr(self, 'confidence_interval'):
+            return "Confidence interval not calculated. Run calculate_confidence_interval() first."
+        
+        ci = self.confidence_interval
+        return (
+            f"Score: {ci['score']:.4f} "
+            f"({ci['confidence_level']*100:.0f}% CI: [{ci['ci_lower']:.4f}, {ci['ci_upper']:.4f}], "
+            f"SE: {ci['std_error']:.4f})"
+        )
+    
     def recommend_strategy(self, verbose: bool = True) -> TransferRecommendation:
         """
         Get transfer learning strategy recommendation
