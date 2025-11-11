@@ -1,0 +1,118 @@
+customer_id,Recency,Frequency,Monetary,gender,age,city,membership_type,avg_rating,discount_applied,satisfaction
+102,18,11,780.5,Male,34,Los Angeles,Silver,4.1,False,Neutral
+105,55,13,720.4,Male,27,Miami,Silver,4.0,True,Unsatisfied
+108,14,12,800.9,Male,35,Los Angeles,Silver,4.2,False,Neutral
+111,34,11,690.3,Male,32,Miami,Silver,3.8,True,Unsatisfied
+114,15,13,820.75,Male,33,Los Angeles,Silver,4.4,False,Satisfied
+117,48,12,700.6,Male,26,Miami,Silver,3.7,True,Unsatisfied
+120,16,11,790.2,Male,34,Los Angeles,Silver,4.0,False,Neutral
+123,54,13,710.4,Male,27,Miami,Silver,4.1,True,Unsatisfied
+126,13,12,810.9,Male,35,Los Angeles,Silver,4.3,False,Neutral
+129,33,10,670.3,Male,32,Miami,Silver,3.8,True,Unsatisfied
+132,14,13,830.75,Male,33,Los Angeles,Silver,4.2,False,Satisfied
+135,47,12,690.6,Male,26,Miami,Silver,3.9,True,Unsatisfied
+138,17,11,800.2,Male,34,Los Angeles,Silver,4.1,False,Neutral
+141,53,13,700.4,Male,27,Miami,Silver,4.0,True,Unsatisfied
+144,12,12,820.9,Male,35,Los Angeles,Silver,4.3,False,Neutral
+147,32,10,680.3,Male,32,Miami,Silver,3.8,True,Unsatisfied
+150,15,11,790.2,Male,34,Los Angeles,Silver,4.0,False,Neutral
+153,54,13,710.4,Male,27,Miami,Silver,4.1,True,Unsatisfied
+156,13,12,810.9,Male,35,Los Angeles,Silver,4.3,False,Neutral
+159,33,10,670.3,Male,32,Miami,Silver,3.8,True,Unsatisfied
+162,14,13,830.75,Male,33,Los Angeles,Silver,4.2,False,Satisfied
+165,47,12,690.6,Male,26,Miami,Silver,3.9,True,Unsatisfied
+168,17,11,800.2,Male,34,Los Angeles,Silver,4.1,False,Neutral
+171,53,13,700.4,Male,27,Miami,Silver,4.0,True,Unsatisfied
+174,12,12,820.9,Male,35,Los Angeles,Silver,4.3,False,Neutral
+177,32,10,680.3,Male,32,Miami,Silver,3.8,True,Unsatisfied
+180,15,11,790.2,Male,34,Los Angeles,Silver,4.0,False,Neutral
+183,54,13,710.4,Male,27,Miami,Silver,4.1,True,Unsatisfied
+186,13,12,810.9,Male,35,Los Angeles,Silver,4.3,False,Neutral
+189,33,10,670.3,Male,32,Miami,Silver,3.8,True,Unsatisfied
+192,14,13,830.75,Male,33,Los Angeles,Silver,4.2,False,Satisfied
+195,47,12,690.6,Male,26,Miami,Silver,3.9,True,Unsatisfied
+198,17,11,800.2,Male,34,Los Angeles,Silver,4.1,False,Neutral
+201,53,13,700.4,Male,27,Miami,Silver,4.0,True,Unsatisfied
+204,12,12,820.9,Male,35,Los Angeles,Silver,4.3,False,Neutral
+207,32,10,680.3,Male,32,Miami,Silver,3.8,True,Unsatisfied
+210,15,11,790.2,Male,34,Los Angeles,Silver,4.0,False,Neutral
+213,54,13,710.4,Male,27,Miami,Silver,4.1,True,Unsatisfied
+216,13,12,810.9,Male,35,Los Angeles,Silver,4.3,False,Neutral
+219,33,10,670.3,Male,32,Miami,Silver,3.8,True,Unsatisfied
+222,14,13,830.75,Male,33,Los Angeles,Silver,4.2,False,Satisfied
+225,47,12,690.6,Male,26,Miami,Silver,3.9,True,Unsatisfied
+228,17,11,800.2,Male,34,Los Angeles,Silver,4.1,False,Neutral
+231,53,13,700.4,Male,27,Miami,Silver,4.0,True,Unsatisfied
+234,12,12,820.9,Male,35,Los Angeles,Silver,4.3,False,Neutral
+237,32,10,680.3,Male,32,Miami,Silver,3.8,True,Unsatisfied
+240,15,11,790.2,Male,34,Los Angeles,Silver,4.0,False,Neutral
+243,54,13,710.4,Male,27,Miami,Silver,4.1,True,Unsatisfied
+246,12,12,820.9,Male,35,Los Angeles,Silver,4.3,False,Neutral
+249,32,10,680.3,Male,32,Miami,Silver,3.8,True,Unsatisfied
+252,15,11,790.2,Male,34,Los Angeles,Silver,4.0,False,Neutral
+255,54,13,710.4,Male,27,Miami,Silver,4.1,True,Unsatisfied
+258,13,12,810.9,Male,35,Los Angeles,Silver,4.3,False,Neutral
+261,33,10,670.3,Male,32,Miami,Silver,3.8,True,Unsatisfied
+264,14,13,830.75,Male,33,Los Angeles,Silver,4.2,False,Satisfied
+267,47,12,690.6,Male,26,Miami,Silver,3.9,True,Unsatisfied
+270,17,11,800.2,Male,34,Los Angeles,Silver,4.1,False,Neutral
+273,53,13,700.4,Male,27,Miami,Silver,4.0,True,Unsatisfied
+276,12,12,820.9,Male,35,Los Angeles,Silver,4.3,False,Neutral
+279,32,10,680.3,Male,32,Miami,Silver,3.8,True,Unsatisfied
+282,15,11,790.2,Male,34,Los Angeles,Silver,4.0,False,Neutral
+285,54,13,710.4,Male,27,Miami,Silver,4.1,True,Unsatisfied
+288,13,12,820.9,Male,35,Los Angeles,Silver,4.3,False,Neutral
+291,33,10,670.3,Male,32,Miami,Silver,3.8,True,Unsatisfied
+294,14,13,830.75,Male,33,Los Angeles,Silver,4.2,False,Satisfied
+297,47,12,690.6,Male,26,Miami,Silver,3.9,True,Unsatisfied
+300,17,11,800.2,Male,34,Los Angeles,Silver,4.1,False,Neutral
+302,50,14,730.4,Female,29,Miami,Silver,4.0,True,Unsatisfied
+305,16,11,780.9,Male,27,Los Angeles,Silver,4.2,False,Neutral
+308,46,12,670.6,Male,26,Miami,Silver,3.9,True,Unsatisfied
+311,14,11,810.2,Male,34,Los Angeles,Silver,4.0,False,Neutral
+314,52,13,690.4,Male,27,Miami,Silver,4.1,True,Unsatisfied
+317,13,12,820.9,Male,35,Los Angeles,Silver,4.3,False,Neutral
+320,32,10,680.3,Male,32,Miami,Silver,3.8,True,Unsatisfied
+323,15,11,790.2,Male,34,Los Angeles,Silver,4.0,False,Neutral
+326,54,13,710.4,Male,27,Miami,Silver,4.1,True,Unsatisfied
+329,13,12,820.9,Male,35,Los Angeles,Silver,4.3,False,Neutral
+332,33,10,670.3,Male,32,Miami,Silver,3.8,True,Unsatisfied
+335,14,13,830.75,Male,33,Los Angeles,Silver,4.2,False,Satisfied
+338,47,12,690.6,Male,26,Miami,Silver,3.9,True,Unsatisfied
+341,17,11,800.2,Male,34,Los Angeles,Silver,4.1,False,Neutral
+344,55,13,720.4,Male,27,Miami,Silver,4.0,True,Unsatisfied
+347,14,12,830.9,Male,35,Los Angeles,Silver,4.3,False,Neutral
+350,34,10,690.3,Male,32,Miami,Silver,3.8,True,Unsatisfied
+353,15,11,790.2,Male,34,Los Angeles,Silver,4.0,False,Neutral
+356,56,13,700.4,Male,27,Miami,Silver,4.1,True,Unsatisfied
+359,14,12,810.9,Male,35,Los Angeles,Silver,4.3,False,Neutral
+362,35,10,660.3,Male,32,Miami,Silver,3.8,True,Unsatisfied
+365,16,11,780.2,Male,34,Los Angeles,Silver,4.1,False,Neutral
+368,57,13,710.4,Male,27,Miami,Silver,4.1,True,Unsatisfied
+371,17,12,800.9,Male,35,Los Angeles,Silver,4.1,False,Neutral
+374,36,10,660.3,Male,32,Miami,Silver,3.8,True,Unsatisfied
+377,18,11,770.2,Male,33,Los Angeles,Silver,4.2,False,Neutral
+380,58,13,710.4,Male,27,Miami,Silver,4.1,True,Unsatisfied
+383,15,12,820.9,Male,35,Los Angeles,Silver,4.3,False,Neutral
+386,37,10,660.3,Male,32,Miami,Silver,3.8,True,Unsatisfied
+389,16,11,780.2,Male,34,Los Angeles,Silver,4.1,False,Neutral
+392,59,13,710.4,Male,27,Miami,Silver,4.1,True,Unsatisfied
+395,17,12,800.9,Male,35,Los Angeles,Silver,4.1,False,Neutral
+398,38,10,660.3,Male,32,Miami,Silver,3.8,True,Unsatisfied
+401,18,11,800.2,Male,33,Los Angeles,Silver,4.1,False,Neutral
+404,60,13,710.4,Male,27,Miami,Silver,4.1,True,Unsatisfied
+407,16,12,820.9,Male,35,Los Angeles,Silver,4.3,False,Neutral
+410,39,10,660.3,Male,32,Miami,Silver,3.8,True,Unsatisfied
+413,17,11,780.2,Male,34,Los Angeles,Silver,4.1,False,Neutral
+416,61,13,710.4,Male,27,Miami,Silver,4.1,True,Unsatisfied
+419,19,12,800.9,Male,35,Los Angeles,Silver,4.1,False,Neutral
+422,40,10,660.3,Male,32,Miami,Silver,3.8,True,Unsatisfied
+425,18,11,780.2,Male,34,Los Angeles,Silver,4.2,False,Neutral
+428,62,13,710.4,Male,27,Miami,Silver,4.1,True,Unsatisfied
+431,20,12,820.9,Male,35,Los Angeles,Silver,4.3,False,Neutral
+434,41,10,660.3,Male,32,Miami,Silver,3.8,True,Unsatisfied
+437,19,11,780.2,Male,34,Los Angeles,Silver,4.1,False,Neutral
+440,63,13,710.4,Male,27,Miami,Silver,4.1,True,Unsatisfied
+443,20,12,800.9,Male,35,Los Angeles,Silver,4.1,False,Neutral
+446,42,10,660.3,Male,32,Miami,Silver,3.8,True,Unsatisfied
+449,21,11,780.2,Male,34,Los Angeles,Silver,4.2,False,Neutral

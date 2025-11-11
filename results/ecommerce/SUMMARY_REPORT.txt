@@ -1,0 +1,58 @@
+================================================================================
+E-COMMERCE TRANSFER LEARNING ANALYSIS - SUMMARY REPORT
+================================================================================
+
+Dataset: E-commerce Customer Behavior - Sheet1_RFM.csv
+Date: 2025-11-11 17:38:29
+Total Pairs Analyzed: 4
+
+================================================================================
+TRANSFERABILITY RANKING (Best to Worst)
+================================================================================
+
+Pair 2: Satisfied → Neutral Customers
+  Score: 0.3311
+  Level: VERY_LOW
+  Strategy: Train From Scratch
+
+Pair 3: New York → Los Angeles
+  Score: 0.2532
+  Level: VERY_LOW
+  Strategy: Train From Scratch
+
+Pair 1: Gold → Silver Members
+  Score: 0.2218
+  Level: VERY_LOW
+  Strategy: Train From Scratch
+
+Pair 4: High Spend → Low Spend
+  Score: 0.2169
+  Level: VERY_LOW
+  Strategy: Train From Scratch
+
+================================================================================
+KEY INSIGHTS
+================================================================================
+
+Distribution:
+  HIGH Transferability: 0 pairs
+  MODERATE Transferability: 0 pairs
+  LOW Transferability: 4 pairs
+
+Best Transfer Candidate:
+  Pair 2: Satisfied → Neutral Customers
+  Score: 0.3311 (VERY_LOW)
+
+Worst Transfer Candidate:
+  Pair 4: High Spend → Low Spend
+  Score: 0.2169 (VERY_LOW)
+
+================================================================================
+DETAILED RESULTS
+================================================================================
+
+Individual analysis reports saved in: results\ecommerce/
+  - pair1_clean_report.txt
+  - pair2_clean_report.txt
+  - pair3_clean_report.txt
+  - pair4_clean_report.txt

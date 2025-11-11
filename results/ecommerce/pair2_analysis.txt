@@ -1,0 +1,89 @@
+
+[1m[96m
+╔═══════════════════════════════════════════════════════════════════════════════╗
+║                   TRANSFER LEARNING FRAMEWORK CLI                             ║
+║                   Customer Segmentation Transfer Analysis                     ║
+╚═══════════════════════════════════════════════════════════════════════════════╝
+[0m
+
+[1m[94m================================================================================[0m
+[1m[96mLoading Custom RFM Files[0m
+[1m[94m================================================================================[0m
+
+[92m✓ Loaded source RFM: 125 customers[0m
+[92m✓ Loaded target RFM: 107 customers[0m
+
+[1m[94m================================================================================[0m
+[1m[96mDomain Comparison[0m
+[1m[94m================================================================================[0m
+
+            Metric Source Domain Target Domain
+         Customers        125.00        107.00
+Avg Recency (days)         17.70         19.29
+     Avg Frequency         17.32          9.44
+  Avg Monetary (₹)          1280        616.41
+    Median Recency         14.00         19.00
+  Median Frequency         16.00          8.00
+   Median Monetary          1201        470.50
+
+[1m[94m================================================================================[0m
+[1m[96mTransfer Learning Analysis[0m
+[1m[94m================================================================================[0m
+
+[96mℹ Calculating transferability metrics (using learned weights)...[0m
+
+======================================================================
+TRANSFERABILITY ANALYSIS REPORT
+======================================================================
+
+📊 Dataset Information:
+   Source customers: 125
+   Target customers: 107
+   Features: 3 (RFM)
+
+📈 Individual Metrics:
+   MMD (Maximum Mean Discrepancy):     0.7721
+      → Lower is better. Range: [0, ∞), typical [0, 2]
+
+   JS Divergence (Jensen-Shannon):      0.7102
+      → Lower is better. Range: [0, 1]
+
+   Correlation Stability:               0.9305
+      → Higher is better. Range: [0, 1]
+
+   KS Statistic (Kolmogorov-Smirnov):   0.7755
+      → Lower is better. Range: [0, 1]
+
+   Wasserstein Distance:                2.2806
+      → Lower is better. Range: [0, ∞)
+
+======================================================================
+🎯 COMPOSITE TRANSFERABILITY SCORE: 0.3311
+======================================================================
+
+[92m✓ Transferability Score: 0.3311[0m
+
+[1m[94m================================================================================[0m
+[1m[96mRecommendation Summary[0m
+[1m[94m================================================================================[0m
+
+[1mStrategy:[0m [92mTrain From Scratch[0m
+[1mTransferability Level:[0m VERY_LOW
+[1mConfidence:[0m 66.8%
+[1mTarget Data Required:[0m 100%
+
+[1mReasoning:[0m
+  Very low transferability (score: 0.3311). Domains are fundamentally different. Transfer learning is not recommended. The source model's knowledge may be irrelevant or even harmful for the target domain. Train a new model from scratch using target data.
+
+[1m[93mPotential Risks:[0m
+  • High distribution mismatch - source and target are very different
+  • Significant divergence in feature distributions
+  • Small target sample size - results may not be representative
+  • Limited source data - model may not have learned robust patterns
+  • Very low transferability - transfer learning may not be beneficial
+
+[1mExpected Performance:[0m
+  Transfer not recommended. Training from scratch on 100% target data will likely outperform transferred model. Source domain knowledge does not apply to this target domain.
+
+[1m[92mAnalysis complete![0m
+

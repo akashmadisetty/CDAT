@@ -23,8 +23,14 @@ Usage Examples:
   python cli.py --mode external --dataset uk_retail --source UK --target France
 """
 
-import argparse
+# Fix Windows console encoding for unicode characters BEFORE other imports
 import sys
+if sys.platform == 'win32':
+    if hasattr(sys.stdout, 'reconfigure'):
+        sys.stdout.reconfigure(encoding='utf-8')
+        sys.stderr.reconfigure(encoding='utf-8')
+
+import argparse
 import os
 from pathlib import Path
 import pandas as pd
@@ -259,6 +265,11 @@ def analyze_transferability(source_data, target_data, pair_info, use_learned_wei
     # Always use the freshly calculated score
     transferability_score = framework.composite_score
     print_success(f"Transferability Score: {transferability_score:.4f}")
+    # Store the computed score back into pair_info so callers (and --save-report) can use it
+    try:
+        pair_info['transferability_score'] = float(transferability_score)
+    except Exception:
+        pair_info['transferability_score'] = None
     
     # Calculate confidence interval if requested
     if with_confidence:
