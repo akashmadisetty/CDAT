@@ -24,7 +24,7 @@ warnings.filterwarnings('ignore')
 sys.path.append(os.path.dirname(__file__))
 
 from framework import TransferLearningFramework
-from calibration import FrameworkCalibration
+from week3.utils.calibration import FrameworkCalibration
 
 
 class FrameworkValidator:

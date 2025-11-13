@@ -27,7 +27,7 @@ sys.path.append(os.path.dirname(__file__))
 from framework import TransferLearningFramework, quick_transfer_assessment
 from metrics import TransferabilityMetrics, quick_transferability_check
 from decision_engine import DecisionEngine
-from calibration import FrameworkCalibration
+from week3.utils.calibration import FrameworkCalibration
 from validation import FrameworkValidator
 
 
