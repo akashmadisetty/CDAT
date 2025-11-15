@@ -1,0 +1,2 @@
+experiment,domain,n_customers,optimal_k,silhouette_score,davies_bouldin_index,calinski_harabasz_score,n_segments,largest_segment_pct,smallest_segment_pct,balance_ratio,top_segment,top_segment_value
+Experiment 5: UK (source) -> France (target),UK Retail - Source Domain,3920,5,0.601313277137112,0.6483549306023765,3196.1312665169785,5,67.52551020408163,0.07653061224489796,882.3333333333334,🌟 Champions,62.8

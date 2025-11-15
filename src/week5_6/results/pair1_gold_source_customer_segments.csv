@@ -1,0 +1,118 @@
+customer_id,Recency,Frequency,Monetary,gender,age,city,membership_type,avg_rating,discount_applied,satisfaction,Segment,Segment_Name,Value_Score
+101,25,14,1120.2,Female,29,New York,Gold,4.6,True,Satisfied,6,💤 About to Sleep,63.3
+104,12,19,1480.3,Male,30,San Francisco,Gold,4.7,False,Satisfied,1,🌟 Champions,87.6
+107,28,15,1150.6,Female,31,New York,Gold,4.5,True,Satisfied,4,😴 Hibernating,61.1
+110,9,21,1520.1,Male,28,San Francisco,Gold,4.8,False,Satisfied,5,🌟 Champions,92.3
+113,21,16,1200.8,Female,30,New York,Gold,4.3,True,Satisfied,7,🔔 Need Attention,69.3
+116,11,18,1360.2,Male,29,San Francisco,Gold,4.9,False,Satisfied,3,🌟 Champions,84.1
+119,29,14,1170.3,Female,32,New York,Gold,4.7,True,Satisfied,4,😴 Hibernating,61.1
+122,13,20,1470.5,Male,30,San Francisco,Gold,4.8,False,Satisfied,1,🌟 Champions,87.6
+125,27,15,1140.6,Female,31,New York,Gold,4.6,True,Satisfied,4,😴 Hibernating,61.1
+128,10,21,1500.1,Male,28,San Francisco,Gold,4.9,False,Satisfied,5,🌟 Champions,92.3
+131,20,16,1190.8,Female,30,New York,Gold,4.5,True,Satisfied,7,🔔 Need Attention,69.3
+134,10,18,1370.2,Male,29,San Francisco,Gold,4.7,False,Satisfied,3,🌟 Champions,84.1
+137,22,14,1160.3,Female,32,New York,Gold,4.4,True,Satisfied,6,💤 About to Sleep,63.3
+140,12,20,1460.5,Male,30,San Francisco,Gold,4.8,False,Satisfied,1,🌟 Champions,87.6
+143,26,15,1130.6,Female,31,New York,Gold,4.5,True,Satisfied,4,😴 Hibernating,61.1
+146,9,21,1490.1,Male,28,San Francisco,Gold,4.9,False,Satisfied,5,🌟 Champions,92.3
+149,19,16,1180.8,Female,30,New York,Gold,4.7,True,Satisfied,7,🔔 Need Attention,69.3
+152,13,20,1470.5,Male,30,San Francisco,Gold,4.8,False,Satisfied,1,🌟 Champions,87.6
+155,27,15,1140.6,Female,31,New York,Gold,4.6,True,Satisfied,4,😴 Hibernating,61.1
+158,10,21,1500.1,Male,28,San Francisco,Gold,4.9,False,Satisfied,5,🌟 Champions,92.3
+161,20,16,1190.8,Female,30,New York,Gold,4.5,True,Satisfied,7,🔔 Need Attention,69.3
+164,10,18,1370.2,Male,29,San Francisco,Gold,4.7,False,Satisfied,3,🌟 Champions,84.1
+167,22,14,1160.3,Female,32,New York,Gold,4.4,True,Satisfied,6,💤 About to Sleep,63.3
+170,12,20,1460.5,Male,30,San Francisco,Gold,4.8,False,Satisfied,1,🌟 Champions,87.6
+173,26,15,1130.6,Female,31,New York,Gold,4.5,True,Satisfied,4,😴 Hibernating,61.1
+176,9,21,1490.1,Male,28,San Francisco,Gold,4.9,False,Satisfied,5,🌟 Champions,92.3
+179,19,16,1180.8,Female,30,New York,Gold,4.7,True,Satisfied,7,🔔 Need Attention,69.3
+182,13,20,1470.5,Male,30,San Francisco,Gold,4.8,False,Satisfied,1,🌟 Champions,87.6
+185,27,15,1140.6,Female,31,New York,Gold,4.6,True,Satisfied,4,😴 Hibernating,61.1
+188,10,21,1500.1,Male,28,San Francisco,Gold,4.9,False,Satisfied,5,🌟 Champions,92.3
+191,20,16,1190.8,Female,30,New York,Gold,4.5,True,Satisfied,7,🔔 Need Attention,69.3
+194,10,18,1370.2,Male,29,San Francisco,Gold,4.7,False,Satisfied,3,🌟 Champions,84.1
+197,22,14,1160.3,Female,32,New York,Gold,4.4,True,Satisfied,6,💤 About to Sleep,63.3
+200,12,20,1460.5,Male,30,San Francisco,Gold,4.8,False,Satisfied,1,🌟 Champions,87.6
+203,26,15,1130.6,Female,31,New York,Gold,4.5,True,Satisfied,4,😴 Hibernating,61.1
+206,9,21,1490.1,Male,28,San Francisco,Gold,4.9,False,Satisfied,5,🌟 Champions,92.3
+209,19,16,1180.8,Female,30,New York,Gold,4.7,True,Satisfied,7,🔔 Need Attention,69.3
+212,13,20,1470.5,Male,30,San Francisco,Gold,4.8,False,Satisfied,1,🌟 Champions,87.6
+215,27,15,1140.6,Female,31,New York,Gold,4.6,True,Satisfied,4,😴 Hibernating,61.1
+218,10,21,1500.1,Male,28,San Francisco,Gold,4.9,False,Satisfied,5,🌟 Champions,92.3
+221,20,16,1190.8,Female,30,New York,Gold,4.5,True,Satisfied,7,🔔 Need Attention,69.3
+224,10,18,1370.2,Male,29,San Francisco,Gold,4.7,False,Satisfied,3,🌟 Champions,84.1
+227,22,14,1160.3,Female,32,New York,Gold,4.4,True,Satisfied,6,💤 About to Sleep,63.3
+230,12,20,1460.5,Male,30,San Francisco,Gold,4.8,False,Satisfied,1,🌟 Champions,87.6
+233,26,15,1130.6,Female,31,New York,Gold,4.5,True,Satisfied,4,😴 Hibernating,61.1
+236,9,21,1490.1,Male,28,San Francisco,Gold,4.9,False,Satisfied,5,🌟 Champions,92.3
+239,19,16,1180.8,Female,30,New York,Gold,4.7,True,Satisfied,7,🔔 Need Attention,69.3
+242,13,20,1470.5,Male,30,San Francisco,Gold,4.8,False,Satisfied,1,🌟 Champions,87.6
+245,26,15,1130.6,Female,31,New York,Gold,4.5,True,Satisfied,4,😴 Hibernating,61.1
+248,9,21,1490.1,Male,28,San Francisco,Gold,4.9,False,Satisfied,5,🌟 Champions,92.3
+251,19,16,1180.8,Female,30,New York,Gold,4.7,True,Satisfied,7,🔔 Need Attention,69.3
+254,13,20,1470.5,Male,30,San Francisco,Gold,4.8,False,Satisfied,1,🌟 Champions,87.6
+257,27,15,1140.6,Female,31,New York,Gold,4.6,True,Satisfied,4,😴 Hibernating,61.1
+260,10,21,1500.1,Male,28,San Francisco,Gold,4.9,False,Satisfied,5,🌟 Champions,92.3
+263,20,16,1190.8,Female,30,New York,Gold,4.5,True,Satisfied,7,🔔 Need Attention,69.3
+266,10,18,1370.2,Male,29,San Francisco,Gold,4.7,False,Satisfied,3,🌟 Champions,84.1
+269,22,14,1160.3,Female,32,New York,Gold,4.4,True,Satisfied,6,💤 About to Sleep,63.3
+272,12,20,1460.5,Male,30,San Francisco,Gold,4.8,False,Satisfied,1,🌟 Champions,87.6
+275,27,15,1140.6,Female,31,New York,Gold,4.5,True,Satisfied,4,😴 Hibernating,61.1
+278,9,21,1490.1,Male,28,San Francisco,Gold,4.9,False,Satisfied,5,🌟 Champions,92.3
+281,19,16,1180.8,Female,30,New York,Gold,4.7,True,Satisfied,7,🔔 Need Attention,69.3
+284,13,20,1470.5,Male,30,San Francisco,Gold,4.8,False,Satisfied,1,🌟 Champions,87.6
+287,26,15,1130.6,Female,31,New York,Gold,4.5,True,Satisfied,4,😴 Hibernating,61.1
+290,10,21,1500.1,Male,28,San Francisco,Gold,4.9,False,Satisfied,5,🌟 Champions,92.3
+293,20,16,1190.8,Female,30,New York,Gold,4.5,True,Satisfied,7,🔔 Need Attention,69.3
+296,10,18,1370.2,Male,29,San Francisco,Gold,4.7,False,Satisfied,3,🌟 Champions,84.1
+299,22,14,1160.3,Female,32,New York,Gold,4.4,True,Satisfied,6,💤 About to Sleep,63.3
+301,11,19,1420.8,Male,36,San Francisco,Gold,4.6,False,Satisfied,1,🌟 Champions,87.6
+304,18,17,1210.6,Male,31,New York,Gold,4.8,True,Satisfied,7,🔔 Need Attention,69.3
+307,9,18,1390.2,Male,29,San Francisco,Gold,4.7,False,Satisfied,3,🌟 Champions,84.1
+310,21,14,1170.3,Female,32,New York,Gold,4.5,True,Satisfied,6,💤 About to Sleep,63.3
+313,12,20,1450.5,Male,30,San Francisco,Gold,4.8,False,Satisfied,1,🌟 Champions,87.6
+316,26,15,1130.6,Female,31,New York,Gold,4.5,True,Satisfied,4,😴 Hibernating,61.1
+319,9,21,1490.1,Male,28,San Francisco,Gold,4.9,False,Satisfied,5,🌟 Champions,92.3
+322,19,16,1180.8,Female,30,New York,Gold,4.7,True,Satisfied,7,🔔 Need Attention,69.3
+325,13,20,1470.5,Male,30,San Francisco,Gold,4.8,False,Satisfied,1,🌟 Champions,87.6
+328,27,15,1140.6,Female,31,New York,Gold,4.5,True,Satisfied,4,😴 Hibernating,61.1
+331,10,21,1500.1,Male,28,San Francisco,Gold,4.9,False,Satisfied,5,🌟 Champions,92.3
+334,20,16,1190.8,Female,30,New York,Gold,4.5,True,Satisfied,7,🔔 Need Attention,69.3
+337,10,18,1370.2,Male,29,San Francisco,Gold,4.7,False,Satisfied,3,🌟 Champions,84.1
+340,22,14,1160.3,Female,32,New York,Gold,4.4,True,Satisfied,6,💤 About to Sleep,63.3
+343,11,20,1460.5,Male,30,San Francisco,Gold,4.8,False,Satisfied,1,🌟 Champions,87.6
+346,28,15,1150.6,Female,31,New York,Gold,4.5,True,Satisfied,4,😴 Hibernating,61.1
+349,10,21,1480.1,Male,28,San Francisco,Gold,4.9,False,Satisfied,5,🌟 Champions,92.3
+352,21,16,1170.8,Female,30,New York,Gold,4.7,True,Satisfied,7,🔔 Need Attention,69.3
+355,12,19,1440.5,Male,30,San Francisco,Gold,4.6,False,Satisfied,1,🌟 Champions,87.6
+358,29,15,1160.6,Female,31,New York,Gold,4.5,True,Satisfied,4,😴 Hibernating,61.1
+361,10,21,1490.1,Male,28,San Francisco,Gold,4.9,False,Satisfied,5,🌟 Champions,92.3
+364,22,16,1200.8,Female,30,New York,Gold,4.7,True,Satisfied,7,🔔 Need Attention,69.3
+367,13,20,1460.5,Male,30,San Francisco,Gold,4.8,False,Satisfied,1,🌟 Champions,87.6
+370,30,15,1140.6,Female,31,New York,Gold,4.5,True,Satisfied,4,😴 Hibernating,61.1
+373,11,21,1480.1,Male,28,San Francisco,Gold,4.9,False,Satisfied,5,🌟 Champions,92.3
+376,23,16,1190.8,Female,30,New York,Gold,4.5,True,Satisfied,2,🔔 Need Attention,65.3
+379,12,19,1450.5,Male,30,San Francisco,Gold,4.6,False,Satisfied,1,🌟 Champions,87.6
+382,31,15,1160.6,Female,31,New York,Gold,4.5,True,Satisfied,0,😴 Hibernating,57.0
+385,10,21,1490.1,Male,28,San Francisco,Gold,4.9,False,Satisfied,5,🌟 Champions,92.3
+388,24,16,1200.8,Female,30,New York,Gold,4.7,True,Satisfied,2,🔔 Need Attention,65.3
+391,13,20,1460.5,Male,30,San Francisco,Gold,4.8,False,Satisfied,1,🌟 Champions,87.6
+394,32,15,1140.6,Female,31,New York,Gold,4.5,True,Satisfied,0,😴 Hibernating,57.0
+397,12,21,1480.1,Male,28,San Francisco,Gold,4.9,False,Satisfied,5,🌟 Champions,92.3
+400,25,16,1190.8,Female,30,New York,Gold,4.5,True,Satisfied,2,🔔 Need Attention,65.3
+403,13,19,1450.5,Male,30,San Francisco,Gold,4.6,False,Satisfied,1,🌟 Champions,87.6
+406,33,15,1160.6,Female,31,New York,Gold,4.5,True,Satisfied,0,😴 Hibernating,57.0
+409,11,21,1490.1,Male,28,San Francisco,Gold,4.9,False,Satisfied,5,🌟 Champions,92.3
+412,25,16,1200.8,Female,30,New York,Gold,4.7,True,Satisfied,2,🔔 Need Attention,65.3
+415,14,20,1460.5,Male,30,San Francisco,Gold,4.8,False,Satisfied,1,🌟 Champions,87.6
+418,34,15,1140.6,Female,31,New York,Gold,4.5,True,Satisfied,0,😴 Hibernating,57.0
+421,12,21,1480.1,Male,28,San Francisco,Gold,4.9,False,Satisfied,5,🌟 Champions,92.3
+424,27,16,1190.8,Female,30,New York,Gold,4.5,True,Satisfied,2,🔔 Need Attention,65.3
+427,14,19,1450.5,Male,30,San Francisco,Gold,4.6,False,Satisfied,1,🌟 Champions,87.6
+430,35,15,1160.6,Female,31,New York,Gold,4.5,True,Satisfied,0,😴 Hibernating,57.0
+433,11,21,1490.1,Male,28,San Francisco,Gold,4.9,False,Satisfied,5,🌟 Champions,92.3
+436,28,16,1200.8,Female,30,New York,Gold,4.7,True,Satisfied,2,🔔 Need Attention,65.3
+439,15,20,1460.5,Male,30,San Francisco,Gold,4.8,False,Satisfied,1,🌟 Champions,87.6
+442,36,15,1140.6,Female,31,New York,Gold,4.5,True,Satisfied,0,😴 Hibernating,57.0
+445,13,21,1480.1,Male,28,San Francisco,Gold,4.9,False,Satisfied,5,🌟 Champions,92.3
+448,28,16,1190.8,Female,30,New York,Gold,4.5,True,Satisfied,2,🔔 Need Attention,65.3
