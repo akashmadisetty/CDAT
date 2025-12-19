@@ -1,0 +1,5 @@
+pair_id,pair_name,composite_score,predicted_level,expected_level,is_correct,strategy,confidence,target_data_pct,mmd,js_divergence,correlation_stability
+pair1,"Cleaning & Household → Foodgrains, Oil & Masala",0.945075487004115,HIGH,HIGH,True,transfer_as_is,99.0,0,0.07333033944514787,0.09776373809216155,0.9635394049615839
+pair2,Snacks & Branded Foods → Fruits & Vegetables,0.849317707678202,HIGH,HIGH,True,transfer_as_is,99.0,0,0.3094888107201373,0.200117742252759,0.9632043049249228
+pair3,Premium Segment → Budget Segment,0.7497832873710943,MODERATE,MODERATE,True,fine_tune_heavy,97.29445770099423,42,0.5488407549786531,0.30979743580490376,0.968837130473077
+pair4,Popular Brands → Niche Brands,0.9487479060774501,HIGH,HIGH,True,transfer_as_is,99.0,0,0.05391476429071541,0.09085794901823263,0.9565927761325645

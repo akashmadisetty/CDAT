@@ -23,17 +23,17 @@
 **Time: 20-25 hours**
 
 #### **Tasks:**
-- [ ] **Day 1-2: Design synthetic customer generation logic**
+- [x] **Day 1-2: Design synthetic customer generation logic**
   - Define customer personas (price-sensitive, brand-loyal, convenience-focused)
   - Create realistic transaction patterns
   - Design temporal distribution (purchase frequency)
 
-- [ ] **Day 3-4: Implement transaction generator**
+- [x] **Day 3-4: Implement transaction generator**
   ```python
   # Your deliverable: synthetic_customer_generator.py
   class CustomerGenerator:
-      def generate_customers(self, product_df, n_customers=5000):
-          # Generate customer profiles
+      def generate_customers(self, product_df, n_customers=5000, customer_id_offset=0):
+          # Generate customer profiles with unique IDs
           pass
       
       def generate_transactions(self, customers, products, n_transactions=50000):
@@ -41,14 +41,21 @@
           pass
   ```
 
-- [ ] **Day 5-7: Create RFM features**
+- [x] **Day 5-7: Create RFM features**
   - Calculate Recency, Frequency, Monetary for each customer
   - Generate for all 4 domain pairs
   - Export: `domain_pair1_source_RFM.csv`, etc.
 
+**⚠️ BUG FIX APPLIED (Nov 2024):**
+- Fixed customer ID overlap issue (was 80% overlap, now 0%)
+- Use `synth_FIXED.py` and `generate_rfm_all_pairs_FIXED.py`
+- See `FIX_DOCUMENTATION.md` for details
+
 **Deliverables:**
-- ✅ `synthetic_customer_generator.py` (working script)
-- ✅ 8 RFM datasets (4 pairs × 2 domains each)
+- ✅ `synth_FIXED.py` (working script with customer_id_offset)
+- ✅ `generate_rfm_all_pairs_FIXED.py` (generates all 4 pairs)
+- ✅ 8 RFM datasets (4 pairs × 2 domains each) - VERIFIED DISJOINT
+- ✅ `check_all_domain_pairs.py` (validation script)
 - ✅ Documentation: How synthetic data was created
 - ✅ Statistics report: Customer distribution analysis
 

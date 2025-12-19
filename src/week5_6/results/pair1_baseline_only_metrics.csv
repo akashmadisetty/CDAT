@@ -1,0 +1,2 @@
+model,transferability_score,n_samples,n_clusters,source_k,missing_clusters,silhouette_score,davies_bouldin_index,calinski_harabasz_score,largest_cluster_pct,smallest_cluster_pct
+Baseline Direct Transfer,0.2218,117,3,8,5,0.5085901618215597,0.4825794368351966,288.5068315429972,50.427350427350426,5.982905982905983

@@ -1,0 +1,33 @@
+================================================================================
+TRANSFER LEARNING FRAMEWORK - ANALYSIS REPORT
+================================================================================
+
+Generated: 2025-11-11 17:38:25
+
+Domain Pair: Custom: pair1_gold_source_RFM → pair1_silver_target_RFM
+Transferability Score: 0.2218
+
+
+Transfer Learning Recommendation
+======================================================================
+Transferability Level: VERY_LOW
+Composite Score: 0.2218
+Confidence: 77.2%
+
+Recommended Strategy: Train From Scratch
+Target Data Required: 100%
+
+Reasoning:
+Very low transferability (score: 0.2218). Domains are fundamentally different. Transfer learning is not recommended. The source model's knowledge may be irrelevant or even harmful for the target domain. Train a new model from scratch using target data.
+
+Potential Risks:
+  • High distribution mismatch - source and target are very different
+  • Feature relationships differ between domains - learned patterns may not transfer well
+  • Significant divergence in feature distributions
+  • Small target sample size - results may not be representative
+  • Limited source data - model may not have learned robust patterns
+  • Very low transferability - transfer learning may not be beneficial
+
+Expected Performance:
+Transfer not recommended. Training from scratch on 100% target data will likely outperform transferred model. Source domain knowledge does not apply to this target domain.
+======================================================================

@@ -1,0 +1,56 @@
+================================================================================
+CROSS-DOMAIN COMPARATIVE ANALYSIS REPORT
+Generated: 2025-11-08 08:44:18
+================================================================================
+
+================================================================================
+📊 EXECUTIVE SUMMARY
+================================================================================
+
+Total Domains Analyzed: 7
+Total Customers: 10,500
+Average Silhouette Score: 0.410
+
+🏆 Best Performing Domain:
+   Baby Care → Bakery, Cakes & Dairy
+   Silhouette Score: 0.475
+   Quality: GOOD
+
+⚠️  Weakest Performing Domain:
+   Premium → Mass-Market Beauty
+   Silhouette Score: 0.381
+   Recommendation: Acceptable
+
+================================================================================
+🔄 TRANSFER LEARNING READINESS
+================================================================================
+
+No Finetune:
+  Domains: 2
+  Avg Silhouette: 0.405
+
+Partial:
+  Domains: 2
+  Avg Silhouette: 0.385
+
+Partial (Low):
+  Domains: 1
+  Avg Silhouette: 0.426
+
+New Model:
+  Domains: 2
+  Avg Silhouette: 0.431
+
+================================================================================
+💡 KEY RECOMMENDATIONS
+================================================================================
+
+1. DEPLOYMENT READY (3 domains):
+   ✓ Premium → Budget
+   ✓ Baby Care → Bakery, Cakes & Dairy
+   ✓ Beverages → Gourmet & World Food
+
+3. NEXT STEPS:
+   → Prioritize high-quality domains for pilot campaigns
+   → Test transfer learning on 'No Finetune' categories
+   → Improve data collection for weak performers

@@ -1,0 +1,2 @@
+experiment,domain,n_customers,optimal_k,silhouette_score,davies_bouldin_index,calinski_harabasz_score,n_segments,largest_segment_pct,smallest_segment_pct,balance_ratio,top_segment,top_segment_value
+Pair 1: Gold (source) -> Silver (target),E-commerce Gold Membership - Source Domain,117,8,0.6812378495636848,0.4686433281995688,1335.1947195639189,8,21.367521367521366,5.128205128205128,4.166666666666667,🌟 Champions,92.3
