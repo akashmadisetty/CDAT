@@ -1,4 +1,5 @@
 # Real - World Experiments
+## TASK 1
 We used 2 Realworld datasets
 There are 4 pairs in ecommerce dataset, 3 pairs in UK retail dataset
 So for each of the pair the following set of tasks have to be done
@@ -7,8 +8,8 @@ So for each of the pair the following set of tasks have to be done
     2. Run the cli.py and see what it says and save the screenshot
     3. As per the model whatever it says finetune the model and then do validation of using 3 score metrics Davies-Bouldin Index, Silhoutte Score, Calinski-Harabraz Score (Check page number 5 figure 1 for more clarity)
     4. Store the results and update the main csv file in the experiments folder.
-This is task 1 
-Task 2 - CROSS Dataset - is use a model from UK retail dataset and make it work on Ecommerce dataset (Repeat steps)
+
+## Task 1.1 - CROSS Dataset - is use a model from UK retail dataset and make it work on Ecommerce dataset (Repeat steps)
 Pairs:
 UK High-Value → Ecommerce Gold (behavioral similarity)
 UK France → Ecommerce Gold (both premium)
